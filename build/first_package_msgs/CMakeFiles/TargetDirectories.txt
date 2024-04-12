@@ -1,0 +1,9 @@
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/uninstall.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/first_package_msgs_uninstall.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/test.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/edit_cache.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/rebuild_cache.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/list_install_components.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/install.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/install/local.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/CMakeFiles/install/strip.dir

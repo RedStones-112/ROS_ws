@@ -1,0 +1,5 @@
+[console_scripts]
+first_node = first_package.first_node:main
+publisher = first_package.publisher:main
+subscriber = first_package.subscriber:main
+

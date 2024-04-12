@@ -1,0 +1,15 @@
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/package_run_dependencies/first_package_msgs
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/parent_prefix_path/first_package_msgs
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/ament_prefix_path.sh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/ament_prefix_path.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/path.sh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/path.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.bash
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.sh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.zsh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/package.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/packages/first_package_msgs
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgsConfig.cmake
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgsConfig-version.cmake
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/package.xml
