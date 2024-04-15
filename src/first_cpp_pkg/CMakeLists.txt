@@ -21,6 +21,9 @@ if(BUILD_TESTING)
 
   add_executable(talker src/publisher_member_function.cpp)
   ament_target_dependencies(talker rclcpp std_msgs)
+
+  add_executable(listener src/subscriber_member_function.cpp)
+  ament_target_dependencies(listener rclcpp std_msgs)
   
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
@@ -33,5 +36,6 @@ if(BUILD_TESTING)
 endif()
 install(TARGETS
   talker
+  listener
   DESTINATION lib/${PROJECT_NAME})
 ament_package()
