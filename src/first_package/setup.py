@@ -28,6 +28,8 @@ setup(
             'pub_image = first_package.pub_image:main',
             'sub_comp_image = first_package.sub_compress_img:main',
             'pub_comp_image = first_package.pub_compress_img:main',
+            'multi_thread = first_package.multi_thread:main',
+            'dist_turtle_server = first_package.dist_turtle_action_server:main',
             'turtle_cmd_and_pose = first_package.turtle_cmd_and_pose:main'
         ],
     },

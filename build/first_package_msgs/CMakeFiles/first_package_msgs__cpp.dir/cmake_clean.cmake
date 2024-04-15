@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/first_package_msgs__cpp"
+  "rosidl_generator_cpp/first_package_msgs/action/detail/dist_turtle__builder.hpp"
+  "rosidl_generator_cpp/first_package_msgs/action/detail/dist_turtle__struct.hpp"
+  "rosidl_generator_cpp/first_package_msgs/action/detail/dist_turtle__traits.hpp"
+  "rosidl_generator_cpp/first_package_msgs/action/dist_turtle.hpp"
   "rosidl_generator_cpp/first_package_msgs/msg/cmd_and_pose_vel.hpp"
   "rosidl_generator_cpp/first_package_msgs/msg/detail/cmd_and_pose_vel__builder.hpp"
   "rosidl_generator_cpp/first_package_msgs/msg/detail/cmd_and_pose_vel__struct.hpp"

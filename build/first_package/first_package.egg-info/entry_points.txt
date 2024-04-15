@@ -1,5 +1,7 @@
 [console_scripts]
+dist_turtle_server = first_package.dist_turtle_action_server:main
 first_node = first_package.first_node:main
+multi_thread = first_package.multi_thread:main
 pub_comp_image = first_package.pub_compress_img:main
 pub_image = first_package.pub_image:main
 publisher = first_package.publisher:main

@@ -1,3 +1,5 @@
+action/DistTurtle.action
+action/DistTurtle.idl
 msg/CmdAndPoseVel.idl
 msg/CmdAndPoseVel.msg
 srv/MultiSpawn.idl

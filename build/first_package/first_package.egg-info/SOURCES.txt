@@ -9,7 +9,9 @@ setup.py
 ../../build/first_package/first_package.egg-info/top_level.txt
 ../../build/first_package/first_package.egg-info/zip-safe
 first_package/__init__.py
+first_package/dist_turtle_action_server.py
 first_package/first_node.py
+first_package/multi_thread.py
 first_package/pub_compress_img.py
 first_package/pub_image.py
 first_package/publisher.py
