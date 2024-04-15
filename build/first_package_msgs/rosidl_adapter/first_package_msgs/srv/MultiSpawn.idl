@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from first_package_msgs/srv/MultiSpawn.srv
+// generated code does not contain a copyright notice
+
+
+module first_package_msgs {
+  module srv {
+    struct MultiSpawn_Request {
+      int64 num;
+    };
+    struct MultiSpawn_Response {
+      sequence<double> x;
+
+      sequence<double> y;
+
+      sequence<double> theta;
+    };
+  };
+};

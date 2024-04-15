@@ -1,5 +1,11 @@
 [console_scripts]
 first_node = first_package.first_node:main
+pub_comp_image = first_package.pub_compress_img:main
+pub_image = first_package.pub_image:main
 publisher = first_package.publisher:main
+service_server = first_package.service_server:main
+sub_comp_image = first_package.sub_compress_img:main
+sub_image = first_package.sub_image:main
 subscriber = first_package.subscriber:main
+turtle_cmd_and_pose = first_package.turtle_cmd_and_pose:main
 

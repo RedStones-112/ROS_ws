@@ -9,7 +9,7 @@ class TutlesimPublisher(Node) :
         super().__init__("turtlesim_publisher")
         self.publisher = self.create_publisher(
             Twist,
-            "turtle1/cmd_vel",
+            "/turtle1/cmd_vel",
             10
         )
         timer_priod = 0.5

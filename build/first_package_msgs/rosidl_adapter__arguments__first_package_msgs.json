@@ -1,0 +1,7 @@
+{
+  "package_name": "first_package_msgs",
+  "non_idl_tuples": [
+    "/home/rds/Desktop/git_ws/ROS_ws/src/first_package_msgs:msg/CmdAndPoseVel.msg",
+    "/home/rds/Desktop/git_ws/ROS_ws/src/first_package_msgs:srv/MultiSpawn.srv"
+  ]
+}

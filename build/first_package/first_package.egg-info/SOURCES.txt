@@ -10,8 +10,14 @@ setup.py
 ../../build/first_package/first_package.egg-info/zip-safe
 first_package/__init__.py
 first_package/first_node.py
+first_package/pub_compress_img.py
+first_package/pub_image.py
 first_package/publisher.py
+first_package/service_server.py
+first_package/sub_compress_img.py
+first_package/sub_image.py
 first_package/subscriber.py
+first_package/turtle_cmd_and_pose.py
 resource/first_package
 test/test_copyright.py
 test/test_flake8.py

@@ -1,0 +1,20 @@
+[0.175s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs -- -j8 -l8
+[0.201s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs -- -j8 -l8
+[0.222s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs
+[0.229s] -- Install configuration: ""
+[0.229s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/package_run_dependencies/first_package_msgs
+[0.229s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/parent_prefix_path/first_package_msgs
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/ament_prefix_path.sh
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/ament_prefix_path.dsv
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/path.sh
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/path.dsv
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.bash
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.sh
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.zsh
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.dsv
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/package.dsv
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/packages/first_package_msgs
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgsConfig.cmake
+[0.230s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgsConfig-version.cmake
+[0.231s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/package.xml
+[0.231s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs

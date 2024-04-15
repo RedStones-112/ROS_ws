@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from first_package_msgs/msg/CmdAndPoseVel.msg
+// generated code does not contain a copyright notice
+
+
+module first_package_msgs {
+  module msg {
+    struct CmdAndPoseVel {
+      float cmd_vel_linear;
+
+      float cmd_vel_angular;
+
+      float pose_x;
+
+      float pose_y;
+
+      float linear_vel;
+
+      float angular_vel;
+    };
+  };
+};

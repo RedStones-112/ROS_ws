@@ -1,0 +1,210 @@
+[0.189s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs -- -j8 -l8
+[0.206s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.291s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.291s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.293s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.312s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.497s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.620s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.779s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.796s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.798s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.817s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.817s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.817s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.817s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.831s] -- Found PythonExtra: .so  
+[0.853s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.860s] -- Added test 'lint_cmake' to check CMake code style
+[0.860s] -- Added test 'xmllint' to check XML markup files
+[0.861s] -- Configuring done
+[0.875s] -- Generating done
+[0.877s] -- Build files have been written to: /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs
+[0.893s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.900s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.905s] [  6%] Built target ament_cmake_python_copy_first_package_msgs
+[1.068s] [  6%] Built target first_package_msgs__cpp
+[1.075s] [  9%] [32mBuilding C object CMakeFiles/first_package_msgs__rosidl_generator_c.dir/rosidl_generator_c/first_package_msgs/msg/detail/cmd_and_pose_vel__functions.c.o[0m
+[1.077s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.077s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.078s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.083s] running egg_info
+[1.083s] creating first_package_msgs.egg-info
+[1.083s] writing first_package_msgs.egg-info/PKG-INFO
+[1.083s] writing dependency_links to first_package_msgs.egg-info/dependency_links.txt
+[1.083s] writing top-level names to first_package_msgs.egg-info/top_level.txt
+[1.084s] writing manifest file 'first_package_msgs.egg-info/SOURCES.txt'
+[1.086s] reading manifest file 'first_package_msgs.egg-info/SOURCES.txt'
+[1.086s] writing manifest file 'first_package_msgs.egg-info/SOURCES.txt'
+[1.107s] [ 19%] Built target ament_cmake_python_build_first_package_msgs_egg
+[1.137s] [ 22%] [32m[1mLinking C shared library libfirst_package_msgs__rosidl_generator_c.so[0m
+[1.164s] [ 22%] Built target first_package_msgs__rosidl_generator_c
+[1.173s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.175s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.175s] [ 32%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.234s] [ 35%] [32mBuilding CXX object CMakeFiles/first_package_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/first_package_msgs/msg/cmd_and_pose_vel__type_support.cpp.o[0m
+[1.284s] [ 38%] [32mBuilding CXX object CMakeFiles/first_package_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/first_package_msgs/msg/detail/cmd_and_pose_vel__type_support.cpp.o[0m
+[1.330s] [ 41%] [32mBuilding CXX object CMakeFiles/first_package_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/first_package_msgs/msg/detail/dds_fastrtps/cmd_and_pose_vel__type_support.cpp.o[0m
+[1.350s] [ 45%] [32mBuilding C object CMakeFiles/first_package_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/first_package_msgs/msg/detail/cmd_and_pose_vel__type_support.c.o[0m
+[1.373s] [ 48%] [32m[1mLinking C shared library libfirst_package_msgs__rosidl_typesupport_introspection_c.so[0m
+[1.395s] [ 48%] Built target first_package_msgs__rosidl_typesupport_introspection_c
+[1.402s] [ 51%] [32mBuilding CXX object CMakeFiles/first_package_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/first_package_msgs/msg/cmd_and_pose_vel__type_support.cpp.o[0m
+[1.427s] [ 54%] [32m[1mLinking CXX shared library libfirst_package_msgs__rosidl_typesupport_c.so[0m
+[1.441s] [ 58%] [32mBuilding CXX object CMakeFiles/first_package_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/first_package_msgs/msg/detail/cmd_and_pose_vel__type_support_c.cpp.o[0m
+[1.466s] [ 58%] Built target first_package_msgs__rosidl_typesupport_c
+[1.480s] [ 61%] [32m[1mLinking CXX shared library libfirst_package_msgs__rosidl_typesupport_cpp.so[0m
+[1.508s] [ 61%] Built target first_package_msgs__rosidl_typesupport_cpp
+[1.566s] [ 64%] [32m[1mLinking CXX shared library libfirst_package_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.594s] [ 64%] Built target first_package_msgs__rosidl_typesupport_introspection_cpp
+[1.649s] [ 67%] [32m[1mLinking CXX shared library libfirst_package_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.649s] [ 70%] [32m[1mLinking CXX shared library libfirst_package_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.706s] [ 70%] Built target first_package_msgs__rosidl_typesupport_fastrtps_cpp
+[1.706s] [ 70%] Built target first_package_msgs__rosidl_typesupport_fastrtps_c
+[1.720s] [ 70%] Built target first_package_msgs
+[1.735s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.920s] [ 74%] Built target first_package_msgs__py
+[1.934s] [ 77%] [32mBuilding C object CMakeFiles/first_package_msgs__rosidl_generator_py.dir/rosidl_generator_py/first_package_msgs/msg/_cmd_and_pose_vel_s.c.o[0m
+[2.016s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/first_package_msgs/libfirst_package_msgs__rosidl_generator_py.so[0m
+[2.049s] [ 80%] Built target first_package_msgs__rosidl_generator_py
+[2.065s] [ 90%] [32mBuilding C object CMakeFiles/first_package_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/first_package_msgs/_first_package_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.065s] [ 90%] [32mBuilding C object CMakeFiles/first_package_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/first_package_msgs/_first_package_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.065s] [ 90%] [32mBuilding C object CMakeFiles/first_package_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/first_package_msgs/_first_package_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.122s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/first_package_msgs/first_package_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.122s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/first_package_msgs/first_package_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.123s] [100%] [32m[1mLinking C shared library rosidl_generator_py/first_package_msgs/first_package_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.146s] [100%] Built target first_package_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.146s] [100%] Built target first_package_msgs__rosidl_typesupport_introspection_c__pyext
+[2.146s] [100%] Built target first_package_msgs__rosidl_typesupport_c__pyext
+[2.154s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs -- -j8 -l8
+[2.197s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs
+[2.203s] -- Install configuration: ""
+[2.203s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/rosidl_interfaces/first_package_msgs
+[2.203s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs
+[2.203s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg
+[2.203s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail
+[2.203s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__struct.h
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__functions.h
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__type_support.h
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__functions.c
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/cmd_and_pose_vel.h
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/library_path.sh
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/library_path.dsv
+[2.204s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_generator_c.so
+[2.204s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_generator_c.so" to ""
+[2.204s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs
+[2.205s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg
+[2.205s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail
+[2.205s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__rosidl_typesupport_fastrtps_c.h
+[2.205s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.205s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_fastrtps_c.so
+[2.205s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.205s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs
+[2.205s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg
+[2.205s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail
+[2.205s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__rosidl_typesupport_introspection_c.h
+[2.205s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__type_support.c
+[2.205s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.205s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_introspection_c.so
+[2.205s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_c.so
+[2.206s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_c.so" to ""
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__struct.hpp
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__traits.hpp
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__builder.hpp
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/cmd_and_pose_vel.hpp
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/dds_fastrtps
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__rosidl_typesupport_fastrtps_cpp.hpp
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.206s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.206s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs
+[2.206s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg
+[2.207s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__rosidl_typesupport_introspection_cpp.hpp
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/include/first_package_msgs/first_package_msgs/msg/detail/cmd_and_pose_vel__type_support.cpp
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_introspection_cpp.so
+[2.207s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_cpp.so
+[2.207s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_typesupport_cpp.so" to ""
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/pythonpath.sh
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/pythonpath.dsv
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs-0.0.0-py3.10.egg-info
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/msg
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/msg/__init__.py
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/msg/_cmd_and_pose_vel_s.c
+[2.207s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/msg/_cmd_and_pose_vel.py
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/_first_package_msgs_s.ep.rosidl_typesupport_c.c
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/__init__.py
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/_first_package_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/_first_package_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.208s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/libfirst_package_msgs__rosidl_generator_py.so
+[2.229s] Listing '/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs'...
+[2.229s] Compiling '/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/__init__.py'...
+[2.229s] Listing '/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/msg'...
+[2.229s] Compiling '/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/msg/__init__.py'...
+[2.229s] Compiling '/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/msg/_cmd_and_pose_vel.py'...
+[2.232s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.232s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.232s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.233s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.233s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.233s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/local/lib/python3.10/dist-packages/first_package_msgs/first_package_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.233s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_generator_py.so
+[2.233s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib/libfirst_package_msgs__rosidl_generator_py.so" to ""
+[2.233s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/msg/CmdAndPoseVel.idl
+[2.233s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/msg/CmdAndPoseVel.msg
+[2.233s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/package_run_dependencies/first_package_msgs
+[2.233s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/parent_prefix_path/first_package_msgs
+[2.233s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/ament_prefix_path.sh
+[2.233s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/ament_prefix_path.dsv
+[2.233s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/path.sh
+[2.233s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/environment/path.dsv
+[2.233s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.bash
+[2.233s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.sh
+[2.234s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.zsh
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/local_setup.dsv
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/package.dsv
+[2.234s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/ament_index/resource_index/packages/first_package_msgs
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_generator_cExport.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_generator_cExport-noconfig.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_cExport.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_generator_cppExport.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.234s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_cppExport.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_generator_pyExport.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/export_first_package_msgs__rosidl_generator_pyExport-noconfig.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/rosidl_cmake-extras.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgsConfig.cmake
+[2.235s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/cmake/first_package_msgsConfig-version.cmake
+[2.235s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/share/first_package_msgs/package.xml
+[2.237s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs

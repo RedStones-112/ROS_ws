@@ -1,6 +1,9 @@
 source;share/first_package_msgs/hook/cmake_prefix_path.ps1
 source;share/first_package_msgs/hook/cmake_prefix_path.dsv
 source;share/first_package_msgs/hook/cmake_prefix_path.sh
+source;share/first_package_msgs/hook/ld_library_path_lib.ps1
+source;share/first_package_msgs/hook/ld_library_path_lib.dsv
+source;share/first_package_msgs/hook/ld_library_path_lib.sh
 source;share/first_package_msgs/local_setup.bash
 source;share/first_package_msgs/local_setup.dsv
 source;share/first_package_msgs/local_setup.ps1

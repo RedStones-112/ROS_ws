@@ -16,7 +16,7 @@ class TutlesimSubscriver(Node) :
         self.subscription
 
     def callback(self, msg) :
-        print("X L ", msg.x, ",Y :", msg.y)
+        print("X : ", msg.x, ",Y :", msg.y)
 
     
 def main(args = None) : 

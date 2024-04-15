@@ -1,0 +1,6 @@
+msg/CmdAndPoseVel.idl
+msg/CmdAndPoseVel.msg
+srv/MultiSpawn.idl
+srv/MultiSpawn.srv
+srv/MultiSpawn_Request.msg
+srv/MultiSpawn_Response.msg
