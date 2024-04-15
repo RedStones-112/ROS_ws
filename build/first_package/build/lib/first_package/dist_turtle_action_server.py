@@ -38,26 +38,30 @@ class DistTurtleServer(Node) :
             "dist_turtle",
             self.excute_callback
         )
-        self.declare_parameter("quantile_time", 0.75)
-        self.declare_parameter("almost_goal_time", 0.95)
+        
+        self.get_logger().info("Dist turtle action server is started.")
 
-        (quantile_time, almosts_time) = self.get_parameters(
-            ["quantile_time", "almost_goal_time"])
+        self.declare_parameter("quantile_time", 0.75)
+        self.declare_parameter("almost_goal_dist", 0.5)
+
+        (quantile_time, almosts_dist) = self.get_parameters(
+            ["quantile_time", "almost_goal_dist"])
         self.quantile_time = quantile_time.value
-        self.almosts_time = almosts_time.value
+        self.almosts_dist = almosts_dist.value
 
         self.add_on_set_parameters_callback(self.parameters_callback)
 
 
     def parameters_callback(self, params) :
         for param in params :
-            print(param.name, "is change to ", param.value)
+            self.get_logger().info(param.name, "is change to ", param.value)
 
             if param.name == "quantile_time" :
                 self.quantile_time = param.value
-            if param.name == "almost_goal_time" :
-                self.almosts_time = param.value
-        print("quantile_time and almost_goal_time is ", self.quantile_time, self.almosts_time)
+            if param.name == "almost_goal_dist" :
+                self.almosts_dist = param.value
+
+        self.get_logger().info(f"quantile_time and almost_goal_dist is {self.quantile_time} {self.almosts_dist}")
 
         return SetParametersResult(successful = True)
             
@@ -80,7 +84,7 @@ class DistTurtleServer(Node) :
         msg.angular.z = goal_handle.request.angular_z
 
         while True :
-            if  feedback_msg.remained_dist >= 0.5:
+            if  feedback_msg.remained_dist >= self.almosts_dist:
                 msg.linear.x = goal_handle.request.linear_x
                 msg.angular.z = goal_handle.request.angular_z
             else : 

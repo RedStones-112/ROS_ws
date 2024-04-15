@@ -1,0 +1,33 @@
+running egg_info
+writing ../../build/first_package/first_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/first_package/first_package.egg-info/dependency_links.txt
+writing entry points to ../../build/first_package/first_package.egg-info/entry_points.txt
+writing requirements to ../../build/first_package/first_package.egg-info/requires.txt
+writing top-level names to ../../build/first_package/first_package.egg-info/top_level.txt
+reading manifest file '../../build/first_package/first_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/first_package/first_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying first_package/dist_turtle_action_server.py -> /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package
+running install
+running install_lib
+copying /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package/dist_turtle_action_server.py -> /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package
+byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package/dist_turtle_action_server.py to dist_turtle_action_server.cpython-310.pyc
+running install_data
+copying launch/turtle_first_launch.launch.py -> /home/rds/Desktop/git_ws/ROS_ws/install/first_package/share/first_package/launch
+running install_egg_info
+removing '/home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/first_package/first_package.egg-info to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package-0.0.0-py3.10.egg-info
+running install_scripts
+Installing dist_turtle_server script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing first_node script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing multi_thread script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing pub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing pub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing publisher script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing service_server script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing sub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing sub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing subscriber script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+Installing turtle_cmd_and_pose script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+writing list of installed files to '/home/rds/Desktop/git_ws/ROS_ws/build/first_package/install.log'
