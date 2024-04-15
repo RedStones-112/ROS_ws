@@ -5,6 +5,7 @@ import math
 from rclpy.action import ActionServer
 from rclpy.node import Node
 from rclpy.executors import MultiThreadedExecutor
+from rcl_interfaces.msg import SetParametersResult
 
 from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
@@ -37,7 +38,30 @@ class DistTurtleServer(Node) :
             "dist_turtle",
             self.excute_callback
         )
-        
+        self.declare_parameter("quantile_time", 0.75)
+        self.declare_parameter("almost_goal_time", 0.95)
+
+        (quantile_time, almosts_time) = self.get_parameters(
+            ["quantile_time", "almost_goal_time"])
+        self.quantile_time = quantile_time.value
+        self.almosts_time = almosts_time.value
+
+        self.add_on_set_parameters_callback(self.parameters_callback)
+
+
+    def parameters_callback(self, params) :
+        for param in params :
+            print(param.name, "is change to ", param.value)
+
+            if param.name == "quantile_time" :
+                self.quantile_time = param.value
+            if param.name == "almost_goal_time" :
+                self.almosts_time = param.value
+        print("quantile_time and almost_goal_time is ", self.quantile_time, self.almosts_time)
+
+        return SetParametersResult(successful = True)
+            
+    
     def calc_diff_pose(self) : 
         if self.is_first_time :
             self.previous_pose.x = self.current_pose.x
@@ -56,13 +80,20 @@ class DistTurtleServer(Node) :
         msg.angular.z = goal_handle.request.angular_z
 
         while True :
+            if  feedback_msg.remained_dist >= 0.5:
+                msg.linear.x = goal_handle.request.linear_x
+                msg.angular.z = goal_handle.request.angular_z
+            else : 
+                msg.linear.x = goal_handle.request.linear_x / 30
+                msg.angular.z = goal_handle.request.angular_z / 30
+            
             self.total_dist += self.calc_diff_pose()
             feedback_msg.remained_dist = goal_handle.request.dist - self.total_dist
             goal_handle.publish_feedback(feedback_msg)
             self.publishers1.publish(msg)
             time.sleep(0.1)
             
-            if feedback_msg.remained_dist < 0.2:
+            if feedback_msg.remained_dist < 0.001: # 오차범위 너무 작을시 추가이동 발생
                 break
         
 
