@@ -1,0 +1,6 @@
+Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rds/Desktop/git_ws/ROS_ws/src/first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp
+Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rds/Desktop/git_ws/ROS_ws/src/first_package_cpp -DCMAKE_INSTALL_PREFIX=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp
+Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp -- -j8 -l8
+Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp -- -j8 -l8
+Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp
+Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp

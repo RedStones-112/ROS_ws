@@ -1,0 +1,25 @@
+[0.013s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg -- -j8 -l8
+[0.199s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[2.989s] [100%] [32m[1mLinking CXX executable talker[0m
+[3.108s] [100%] Built target talker
+[3.117s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg -- -j8 -l8
+[3.135s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg
+[3.141s] -- Install configuration: ""
+[3.141s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/talker
+[3.142s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/talker" to ""
+[3.142s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/first_cpp_pkg
+[3.142s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/first_cpp_pkg
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/ament_prefix_path.sh
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/ament_prefix_path.dsv
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/path.sh
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/path.dsv
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.bash
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.sh
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.zsh
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.dsv
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/package.dsv
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/packages/first_cpp_pkg
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/cmake/first_cpp_pkgConfig.cmake
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/cmake/first_cpp_pkgConfig-version.cmake
+[3.143s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/package.xml
+[3.144s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg

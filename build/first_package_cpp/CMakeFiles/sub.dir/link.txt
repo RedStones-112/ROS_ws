@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/sub.dir/src/my_subscriber.cpp.o -o sub 

@@ -1,0 +1,11 @@
+[0.185s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp -- -j8 -l8
+[0.213s] [35m[1mConsolidate compiler generated dependencies of target sub[0m
+[0.221s] [ 25%] [32m[1mLinking CXX executable sub[0m
+[0.223s] [ 75%] Built target first_node_cpp
+[0.266s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.266s] (.text+0x1b): undefined reference to `main'
+[0.267s] collect2: error: ld returned 1 exit status
+[0.268s] gmake[2]: *** [CMakeFiles/sub.dir/build.make:97: sub] Error 1
+[0.268s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/sub.dir/all] Error 2
+[0.268s] gmake: *** [Makefile:146: all] Error 2
+[0.270s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp -- -j8 -l8

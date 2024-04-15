@@ -1,0 +1,24 @@
+[0.182s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp -- -j8 -l8
+[0.198s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.297s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.349s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.349s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/rds/Desktop/git_ws/ROS_ws/src/first_package_cpp/include>
+[0.349s] -- Configured cppcheck exclude dirs and/or files: 
+[0.349s] -- Added test 'lint_cmake' to check CMake code style
+[0.350s] -- Added test 'uncrustify' to check C / C++ code style
+[0.350s] -- Configured uncrustify additional arguments: 
+[0.350s] -- Added test 'xmllint' to check XML markup files
+[0.350s] -- Configuring done
+[0.354s] -- Generating done
+[0.355s] -- Build files have been written to: /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp
+[0.370s] [35m[1mConsolidate compiler generated dependencies of target first_node_cpp[0m
+[0.378s] [ 25%] [32mBuilding CXX object CMakeFiles/sub.dir/src/my_subscriber.cpp.o[0m
+[0.378s] [ 75%] Built target first_node_cpp
+[0.392s] [100%] [32m[1mLinking CXX executable sub[0m
+[0.419s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.419s] (.text+0x1b): undefined reference to `main'
+[0.420s] collect2: error: ld returned 1 exit status
+[0.421s] gmake[2]: *** [CMakeFiles/sub.dir/build.make:97: sub] Error 1
+[0.421s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/sub.dir/all] Error 2
+[0.422s] gmake: *** [Makefile:146: all] Error 2
+[0.423s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_cpp -- -j8 -l8

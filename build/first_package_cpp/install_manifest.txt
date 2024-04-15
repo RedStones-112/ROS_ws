@@ -1,0 +1,16 @@
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/lib/first_package_cpp/first_node_cpp
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/ament_index/resource_index/package_run_dependencies/first_package_cpp
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/ament_index/resource_index/parent_prefix_path/first_package_cpp
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/environment/ament_prefix_path.sh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/environment/ament_prefix_path.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/environment/path.sh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/environment/path.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/local_setup.bash
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/local_setup.sh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/local_setup.zsh
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/local_setup.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/package.dsv
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/ament_index/resource_index/packages/first_package_cpp
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/cmake/first_package_cppConfig.cmake
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/cmake/first_package_cppConfig-version.cmake
+/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp/share/first_package_cpp/package.xml
