@@ -14,16 +14,26 @@ class camPublisher(Node) :
             "/web_cam",
             10
         )
+        self.declare_parameter('width', 640)
+        self.width = self.get_parameter('width').value
+        self.declare_parameter('length', 480)
+        self.length = self.get_parameter('length').value
+        output_msg = "Video Width : " + str(self.width) + "\n\r"
+        output_msg = output_msg + "Video Length : " + str(self.length)
+        self.get_logger().info(output_msg)
+        
         self.bridge = CvBridge()
         timer_priod = 0.001
         self.timer = self.create_timer(timer_priod, self.timer_callback)
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(1)
 
     def timer_callback(self) :
         ret, image = self.cap.read()
+        image = cv2.resize(image, (self.width, self.length))
         if ret == True :
             img = self.bridge.cv2_to_imgmsg(image, "bgr8")
             self.publisher.publish(img)
+            cv2.waitKey(1)
         
     
 def main(args = None) : 

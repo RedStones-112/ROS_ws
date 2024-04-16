@@ -1,0 +1,43 @@
+[0.514s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/src/first_package': PYTHONPATH=/home/rds/Desktop/git_ws/ROS_ws/build/first_package/prefix_override:/home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/first_package build --build-base /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build install --record /home/rds/Desktop/git_ws/ROS_ws/build/first_package/install.log --single-version-externally-managed install_data
+[0.730s] running egg_info
+[0.731s] writing ../../build/first_package/first_package.egg-info/PKG-INFO
+[0.731s] writing dependency_links to ../../build/first_package/first_package.egg-info/dependency_links.txt
+[0.731s] writing entry points to ../../build/first_package/first_package.egg-info/entry_points.txt
+[0.731s] writing requirements to ../../build/first_package/first_package.egg-info/requires.txt
+[0.731s] writing top-level names to ../../build/first_package/first_package.egg-info/top_level.txt
+[0.732s] reading manifest file '../../build/first_package/first_package.egg-info/SOURCES.txt'
+[0.733s] writing manifest file '../../build/first_package/first_package.egg-info/SOURCES.txt'
+[0.733s] running build
+[0.733s] running build_py
+[0.733s] copying first_package/sub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package
+[0.734s] copying first_package/sub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package
+[0.734s] copying first_package/pub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package
+[0.734s] copying first_package/pub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package
+[0.734s] running install
+[0.735s] running install_lib
+[0.735s] copying /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package/sub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package
+[0.735s] copying /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package/sub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package
+[0.735s] copying /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package/pub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package
+[0.736s] copying /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build/lib/first_package/pub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package
+[0.736s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package/sub_compress_img.py to sub_compress_img.cpython-310.pyc
+[0.736s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package/sub_image.py to sub_image.cpython-310.pyc
+[0.737s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package/pub_compress_img.py to pub_compress_img.cpython-310.pyc
+[0.737s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package/pub_image.py to pub_image.cpython-310.pyc
+[0.737s] running install_data
+[0.738s] running install_egg_info
+[0.739s] removing '/home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package-0.0.0-py3.10.egg-info' (and everything under it)
+[0.739s] Copying ../../build/first_package/first_package.egg-info to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages/first_package-0.0.0-py3.10.egg-info
+[0.739s] running install_scripts
+[0.753s] Installing dist_turtle_server script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing first_node script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing multi_thread script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing pub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing pub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing publisher script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing service_server script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing sub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing sub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing subscriber script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.753s] Installing turtle_cmd_and_pose script to /home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/first_package
+[0.754s] writing list of installed files to '/home/rds/Desktop/git_ws/ROS_ws/build/first_package/install.log'
+[0.770s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/src/first_package' returned '0': PYTHONPATH=/home/rds/Desktop/git_ws/ROS_ws/build/first_package/prefix_override:/home/rds/Desktop/git_ws/ROS_ws/install/first_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/first_package build --build-base /home/rds/Desktop/git_ws/ROS_ws/build/first_package/build install --record /home/rds/Desktop/git_ws/ROS_ws/build/first_package/install.log --single-version-externally-managed install_data

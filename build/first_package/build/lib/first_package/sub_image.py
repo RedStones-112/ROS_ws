@@ -14,13 +14,25 @@ class ImageSubscriber(Node) :
             self.callback,
             10
         )
+        self.publisher = self.create_publisher(
+            Image,
+            "/edge",
+            10
+        )
         self.subscription
         self.bridge = CvBridge()
 
+        
+
     def callback(self, msg) :
         self.image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
-        cv2.imshow("img", self.image)
-        cv2.waitKey(33)
+        
+        gray_img = cv2.cvtColor(self.image, cv2.COLOR_BGR2GRAY)
+        image = cv2.Canny(gray_img, 0, 200)
+        
+        img = self.bridge.cv2_to_imgmsg(image)
+        self.publisher.publish(img)
+        cv2.waitKey(1)
 
     
 def main(args = None) : 

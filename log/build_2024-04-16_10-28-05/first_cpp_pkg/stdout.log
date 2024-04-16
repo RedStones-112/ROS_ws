@@ -1,0 +1,20 @@
+[100%] Built target talker
+[100%] Built target listener
+-- Install configuration: ""
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/talker
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/listener
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/first_cpp_pkg
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/first_cpp_pkg
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/path.sh
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/path.dsv
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.bash
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.sh
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.zsh
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.dsv
+-- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/package.dsv
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/packages/first_cpp_pkg
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/cmake/first_cpp_pkgConfig.cmake
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/cmake/first_cpp_pkgConfig-version.cmake
+-- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/package.xml

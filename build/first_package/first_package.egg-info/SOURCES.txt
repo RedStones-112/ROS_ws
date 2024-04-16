@@ -20,6 +20,7 @@ first_package/sub_compress_img.py
 first_package/sub_image.py
 first_package/subscriber.py
 first_package/turtle_cmd_and_pose.py
+launch/camera.launch.py
 launch/turtle_first_launch.launch.py
 resource/first_package
 test/test_copyright.py

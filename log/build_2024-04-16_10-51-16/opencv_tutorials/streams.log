@@ -1,0 +1,44 @@
+[0.731s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/src/opencv_tutorials': PYTHONPATH=/home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/prefix_override:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tutorials build --build-base /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build install --record /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/install.log --single-version-externally-managed install_data
+[0.905s] running egg_info
+[0.905s] writing ../../build/opencv_tutorials/opencv_tutorials.egg-info/PKG-INFO
+[0.906s] writing dependency_links to ../../build/opencv_tutorials/opencv_tutorials.egg-info/dependency_links.txt
+[0.906s] writing entry points to ../../build/opencv_tutorials/opencv_tutorials.egg-info/entry_points.txt
+[0.906s] writing requirements to ../../build/opencv_tutorials/opencv_tutorials.egg-info/requires.txt
+[0.906s] writing top-level names to ../../build/opencv_tutorials/opencv_tutorials.egg-info/top_level.txt
+[0.907s] reading manifest file '../../build/opencv_tutorials/opencv_tutorials.egg-info/SOURCES.txt'
+[0.908s] writing manifest file '../../build/opencv_tutorials/opencv_tutorials.egg-info/SOURCES.txt'
+[0.908s] running build
+[0.908s] running build_py
+[0.908s] copying opencv_tutorials/sub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+[0.908s] copying opencv_tutorials/sub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+[0.908s] copying opencv_tutorials/pub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+[0.908s] copying opencv_tutorials/__init__.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+[0.908s] copying opencv_tutorials/pub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+[0.908s] running install
+[0.909s] running install_lib
+[0.910s] copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/sub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+[0.910s] copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/sub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+[0.910s] copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/pub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+[0.910s] copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/__init__.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+[0.910s] copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/pub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+[0.910s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/sub_compress_img.py to sub_compress_img.cpython-310.pyc
+[0.911s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/sub_image.py to sub_image.cpython-310.pyc
+[0.911s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/pub_compress_img.py to pub_compress_img.cpython-310.pyc
+[0.912s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/__init__.py to __init__.cpython-310.pyc
+[0.912s] byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/pub_image.py to pub_image.cpython-310.pyc
+[0.912s] running install_data
+[0.912s] copying resource/opencv_tutorials -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/ament_index/resource_index/packages
+[0.913s] copying package.xml -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/opencv_tutorials
+[0.913s] creating /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/opencv_tutorials/launch
+[0.913s] copying launch/camera.launch.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/opencv_tutorials/launch
+[0.913s] creating /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/opencv_tutorials/param
+[0.913s] running install_egg_info
+[0.914s] removing '/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials-0.0.0-py3.10.egg-info' (and everything under it)
+[0.915s] Copying ../../build/opencv_tutorials/opencv_tutorials.egg-info to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials-0.0.0-py3.10.egg-info
+[0.915s] running install_scripts
+[0.932s] Installing pub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[0.932s] Installing pub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[0.932s] Installing sub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[0.932s] Installing sub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[0.933s] writing list of installed files to '/home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/install.log'
+[0.956s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/src/opencv_tutorials' returned '0': PYTHONPATH=/home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/prefix_override:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tutorials build --build-base /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build install --record /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/install.log --single-version-externally-managed install_data

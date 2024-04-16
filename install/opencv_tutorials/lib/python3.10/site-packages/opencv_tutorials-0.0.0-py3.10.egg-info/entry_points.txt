@@ -1,0 +1,6 @@
+[console_scripts]
+pub_comp_image = opencv_tutorials.pub_compress_img:main
+pub_image = opencv_tutorials.pub_image:main
+sub_comp_image = opencv_tutorials.sub_compress_img:main
+sub_image = opencv_tutorials.sub_image:main
+

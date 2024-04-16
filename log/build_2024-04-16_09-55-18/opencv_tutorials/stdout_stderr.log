@@ -1,0 +1,43 @@
+running egg_info
+creating ../../../build/opencv_tutorials/opencv_tutorials.egg-info
+writing ../../../build/opencv_tutorials/opencv_tutorials.egg-info/PKG-INFO
+writing dependency_links to ../../../build/opencv_tutorials/opencv_tutorials.egg-info/dependency_links.txt
+writing entry points to ../../../build/opencv_tutorials/opencv_tutorials.egg-info/entry_points.txt
+writing requirements to ../../../build/opencv_tutorials/opencv_tutorials.egg-info/requires.txt
+writing top-level names to ../../../build/opencv_tutorials/opencv_tutorials.egg-info/top_level.txt
+writing manifest file '../../../build/opencv_tutorials/opencv_tutorials.egg-info/SOURCES.txt'
+reading manifest file '../../../build/opencv_tutorials/opencv_tutorials.egg-info/SOURCES.txt'
+writing manifest file '../../../build/opencv_tutorials/opencv_tutorials.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build
+creating /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib
+creating /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+copying opencv_tutorials/sub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+copying opencv_tutorials/sub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+copying opencv_tutorials/pub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+copying opencv_tutorials/__init__.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+copying opencv_tutorials/pub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials
+running install
+running install_lib
+creating /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/sub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/sub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/pub_compress_img.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/__init__.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+copying /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build/lib/opencv_tutorials/pub_image.py -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials
+byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/sub_compress_img.py to sub_compress_img.cpython-310.pyc
+byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/sub_image.py to sub_image.cpython-310.pyc
+byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/pub_compress_img.py to pub_compress_img.cpython-310.pyc
+byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials/pub_image.py to pub_image.cpython-310.pyc
+running install_data
+creating /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/ament_index
+creating /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/ament_index/resource_index
+creating /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/ament_index/resource_index/packages
+copying resource/opencv_tutorials -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/ament_index/resource_index/packages
+copying package.xml -> /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/share/opencv_tutorials
+running install_egg_info
+Copying ../../../build/opencv_tutorials/opencv_tutorials.egg-info to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/install.log'
