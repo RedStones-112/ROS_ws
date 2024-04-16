@@ -14,6 +14,7 @@ opencv_tutorials/pub_compress_img.py
 opencv_tutorials/pub_image.py
 opencv_tutorials/sub_compress_img.py
 opencv_tutorials/sub_image.py
+param/size.yaml
 resource/opencv_tutorials
 test/test_copyright.py
 test/test_flake8.py

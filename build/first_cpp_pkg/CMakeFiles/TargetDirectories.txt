@@ -1,7 +1,8 @@
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/uninstall.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/first_cpp_pkg_uninstall.dir
-/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/talker.dir
-/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/listener.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/turtle_talker.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/turtle_listener.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/turtle_cmd_and_pose.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/test.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/edit_cache.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/rebuild_cache.dir

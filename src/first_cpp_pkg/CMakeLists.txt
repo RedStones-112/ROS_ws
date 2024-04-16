@@ -9,6 +9,9 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(turtlesim REQUIRED)
+find_package(first_package_msgs REQUIRED)
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -19,11 +22,14 @@ if(BUILD_TESTING)
   
   
 
-  add_executable(talker src/publisher_member_function.cpp)
-  ament_target_dependencies(talker rclcpp std_msgs)
+  add_executable(turtle_talker src/publisher.cpp)
+  ament_target_dependencies(turtle_talker rclcpp geometry_msgs)
 
-  add_executable(listener src/subscriber_member_function.cpp)
-  ament_target_dependencies(listener rclcpp std_msgs)
+  add_executable(turtle_listener src/subscriber.cpp)
+  ament_target_dependencies(turtle_listener rclcpp turtlesim)
+
+  add_executable(turtle_cmd_and_pose src/turtle_cmd_and_pose.cpp)
+  ament_target_dependencies(turtle_cmd_and_pose rclcpp turtlesim first_package_msgs geometry_msgs)
   
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
@@ -35,7 +41,8 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 install(TARGETS
-  talker
-  listener
+  turtle_talker
+  turtle_listener
+  turtle_cmd_and_pose
   DESTINATION lib/${PROJECT_NAME})
 ament_package()

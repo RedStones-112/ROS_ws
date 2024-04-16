@@ -198,78 +198,115 @@ first_cpp_pkg_uninstall/fast:
 .PHONY : first_cpp_pkg_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named talker
+# Target rules for targets named turtle_talker
 
 # Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
+turtle_talker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtle_talker
+.PHONY : turtle_talker
 
 # fast build rule for target.
-talker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+turtle_talker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/build
+.PHONY : turtle_talker/fast
 
 #=============================================================================
-# Target rules for targets named listener
+# Target rules for targets named turtle_listener
 
 # Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
+turtle_listener: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtle_listener
+.PHONY : turtle_listener
 
 # fast build rule for target.
-listener/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-.PHONY : listener/fast
+turtle_listener/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_listener.dir/build.make CMakeFiles/turtle_listener.dir/build
+.PHONY : turtle_listener/fast
 
-src/publisher_member_function.o: src/publisher_member_function.cpp.o
-.PHONY : src/publisher_member_function.o
+#=============================================================================
+# Target rules for targets named turtle_cmd_and_pose
 
-# target to build an object file
-src/publisher_member_function.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.o
-.PHONY : src/publisher_member_function.cpp.o
+# Build rule for target.
+turtle_cmd_and_pose: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtle_cmd_and_pose
+.PHONY : turtle_cmd_and_pose
 
-src/publisher_member_function.i: src/publisher_member_function.cpp.i
-.PHONY : src/publisher_member_function.i
+# fast build rule for target.
+turtle_cmd_and_pose/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/build
+.PHONY : turtle_cmd_and_pose/fast
 
-# target to preprocess a source file
-src/publisher_member_function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.i
-.PHONY : src/publisher_member_function.cpp.i
-
-src/publisher_member_function.s: src/publisher_member_function.cpp.s
-.PHONY : src/publisher_member_function.s
-
-# target to generate assembly for a file
-src/publisher_member_function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.s
-.PHONY : src/publisher_member_function.cpp.s
-
-src/subscriber_member_function.o: src/subscriber_member_function.cpp.o
-.PHONY : src/subscriber_member_function.o
+src/publisher.o: src/publisher.cpp.o
+.PHONY : src/publisher.o
 
 # target to build an object file
-src/subscriber_member_function.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o
-.PHONY : src/subscriber_member_function.cpp.o
+src/publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/src/publisher.cpp.o
+.PHONY : src/publisher.cpp.o
 
-src/subscriber_member_function.i: src/subscriber_member_function.cpp.i
-.PHONY : src/subscriber_member_function.i
+src/publisher.i: src/publisher.cpp.i
+.PHONY : src/publisher.i
 
 # target to preprocess a source file
-src/subscriber_member_function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscriber_member_function.cpp.i
-.PHONY : src/subscriber_member_function.cpp.i
+src/publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/src/publisher.cpp.i
+.PHONY : src/publisher.cpp.i
 
-src/subscriber_member_function.s: src/subscriber_member_function.cpp.s
-.PHONY : src/subscriber_member_function.s
+src/publisher.s: src/publisher.cpp.s
+.PHONY : src/publisher.s
 
 # target to generate assembly for a file
-src/subscriber_member_function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscriber_member_function.cpp.s
-.PHONY : src/subscriber_member_function.cpp.s
+src/publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/src/publisher.cpp.s
+.PHONY : src/publisher.cpp.s
+
+src/subscriber.o: src/subscriber.cpp.o
+.PHONY : src/subscriber.o
+
+# target to build an object file
+src/subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_listener.dir/build.make CMakeFiles/turtle_listener.dir/src/subscriber.cpp.o
+.PHONY : src/subscriber.cpp.o
+
+src/subscriber.i: src/subscriber.cpp.i
+.PHONY : src/subscriber.i
+
+# target to preprocess a source file
+src/subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_listener.dir/build.make CMakeFiles/turtle_listener.dir/src/subscriber.cpp.i
+.PHONY : src/subscriber.cpp.i
+
+src/subscriber.s: src/subscriber.cpp.s
+.PHONY : src/subscriber.s
+
+# target to generate assembly for a file
+src/subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_listener.dir/build.make CMakeFiles/turtle_listener.dir/src/subscriber.cpp.s
+.PHONY : src/subscriber.cpp.s
+
+src/turtle_cmd_and_pose.o: src/turtle_cmd_and_pose.cpp.o
+.PHONY : src/turtle_cmd_and_pose.o
+
+# target to build an object file
+src/turtle_cmd_and_pose.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/src/turtle_cmd_and_pose.cpp.o
+.PHONY : src/turtle_cmd_and_pose.cpp.o
+
+src/turtle_cmd_and_pose.i: src/turtle_cmd_and_pose.cpp.i
+.PHONY : src/turtle_cmd_and_pose.i
+
+# target to preprocess a source file
+src/turtle_cmd_and_pose.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/src/turtle_cmd_and_pose.cpp.i
+.PHONY : src/turtle_cmd_and_pose.cpp.i
+
+src/turtle_cmd_and_pose.s: src/turtle_cmd_and_pose.cpp.s
+.PHONY : src/turtle_cmd_and_pose.s
+
+# target to generate assembly for a file
+src/turtle_cmd_and_pose.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/src/turtle_cmd_and_pose.cpp.s
+.PHONY : src/turtle_cmd_and_pose.cpp.s
 
 # Help Target
 help:
@@ -286,14 +323,18 @@ help:
 	@echo "... test"
 	@echo "... first_cpp_pkg_uninstall"
 	@echo "... uninstall"
-	@echo "... listener"
-	@echo "... talker"
-	@echo "... src/publisher_member_function.o"
-	@echo "... src/publisher_member_function.i"
-	@echo "... src/publisher_member_function.s"
-	@echo "... src/subscriber_member_function.o"
-	@echo "... src/subscriber_member_function.i"
-	@echo "... src/subscriber_member_function.s"
+	@echo "... turtle_cmd_and_pose"
+	@echo "... turtle_listener"
+	@echo "... turtle_talker"
+	@echo "... src/publisher.o"
+	@echo "... src/publisher.i"
+	@echo "... src/publisher.s"
+	@echo "... src/subscriber.o"
+	@echo "... src/subscriber.i"
+	@echo "... src/subscriber.s"
+	@echo "... src/turtle_cmd_and_pose.o"
+	@echo "... src/turtle_cmd_and_pose.i"
+	@echo "... src/turtle_cmd_and_pose.s"
 .PHONY : help
 
 

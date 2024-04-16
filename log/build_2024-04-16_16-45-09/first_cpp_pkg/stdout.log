@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target turtle_cmd_and_pose[0m
+[ 33%] Built target turtle_talker
+[ 66%] Built target turtle_listener
+[ 83%] [32mBuilding CXX object CMakeFiles/turtle_cmd_and_pose.dir/src/turtle_cmd_and_pose.cpp.o[0m

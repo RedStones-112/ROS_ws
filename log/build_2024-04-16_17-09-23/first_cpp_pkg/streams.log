@@ -1,0 +1,31 @@
+[0.009s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg': CMAKE_PREFIX_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs:/home/rds/Desktop/git_ws/urdf_ws/src/install/urdf_ws:/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp:/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble LD_LIBRARY_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64/ /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg -- -j8 -l8
+[0.072s] [35m[1mConsolidate compiler generated dependencies of target turtle_cmd_and_pose[0m
+[0.093s] [ 33%] Built target turtle_listener
+[0.096s] [ 50%] [32mBuilding CXX object CMakeFiles/turtle_cmd_and_pose.dir/src/turtle_cmd_and_pose.cpp.o[0m
+[0.113s] [ 83%] Built target turtle_talker
+[2.236s] [100%] [32m[1mLinking CXX executable turtle_cmd_and_pose[0m
+[2.323s] [100%] Built target turtle_cmd_and_pose
+[2.333s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs:/home/rds/Desktop/git_ws/urdf_ws/src/install/urdf_ws:/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp:/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble LD_LIBRARY_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64/ /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg -- -j8 -l8
+[2.356s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg': CMAKE_PREFIX_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs:/home/rds/Desktop/git_ws/urdf_ws/src/install/urdf_ws:/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp:/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble LD_LIBRARY_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64/ /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg
+[2.361s] -- Install configuration: ""
+[2.361s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/turtle_talker
+[2.362s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/turtle_listener
+[2.364s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/turtle_listener" to ""
+[2.364s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/turtle_cmd_and_pose
+[2.364s] -- Set runtime path of "/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/turtle_cmd_and_pose" to ""
+[2.364s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/first_cpp_pkg
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/first_cpp_pkg
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/ament_prefix_path.sh
+[2.365s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/ament_prefix_path.dsv
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/path.sh
+[2.365s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/environment/path.dsv
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.bash
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.sh
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.zsh
+[2.365s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/local_setup.dsv
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/package.dsv
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/packages/first_cpp_pkg
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/cmake/first_cpp_pkgConfig.cmake
+[2.365s] -- Up-to-date: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/cmake/first_cpp_pkgConfig-version.cmake
+[2.365s] -- Installing: /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/package.xml
+[2.367s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs:/home/rds/Desktop/git_ws/urdf_ws/src/install/urdf_ws:/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp:/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble LD_LIBRARY_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64/ /usr/bin/cmake --install /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg

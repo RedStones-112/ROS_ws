@@ -1,0 +1,4 @@
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/turtle_cmd_and_pose.cpp:[m[K In member function ‘[01m[Kvoid CmdAndPose::callback_cmd(geometry_msgs::msg::Twist&)[m[K’:
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/turtle_cmd_and_pose.cpp:40:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   40 |     void callback_cmd([01;35m[Kgeometry_msgs::msg::Twist & msg[m[K)
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

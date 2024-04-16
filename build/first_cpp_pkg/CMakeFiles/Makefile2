@@ -63,8 +63,9 @@ CMAKE_BINARY_DIR = /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/talker.dir/all
-all: CMakeFiles/listener.dir/all
+all: CMakeFiles/turtle_talker.dir/all
+all: CMakeFiles/turtle_listener.dir/all
+all: CMakeFiles/turtle_cmd_and_pose.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +75,9 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/first_cpp_pkg_uninstall.dir/clean
-clean: CMakeFiles/talker.dir/clean
-clean: CMakeFiles/listener.dir/clean
+clean: CMakeFiles/turtle_talker.dir/clean
+clean: CMakeFiles/turtle_listener.dir/clean
+clean: CMakeFiles/turtle_cmd_and_pose.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -131,56 +133,82 @@ CMakeFiles/first_cpp_pkg_uninstall.dir/clean:
 .PHONY : CMakeFiles/first_cpp_pkg_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/talker.dir
+# Target rules for target CMakeFiles/turtle_talker.dir
 
 # All Build rule for target.
-CMakeFiles/talker.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles --progress-num=3,4 "Built target talker"
-.PHONY : CMakeFiles/talker.dir/all
+CMakeFiles/turtle_talker.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles --progress-num=5,6 "Built target turtle_talker"
+.PHONY : CMakeFiles/turtle_talker.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/talker.dir/rule: cmake_check_build_system
+CMakeFiles/turtle_talker.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/talker.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/turtle_talker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/talker.dir/rule
+.PHONY : CMakeFiles/turtle_talker.dir/rule
 
 # Convenience name for target.
-talker: CMakeFiles/talker.dir/rule
-.PHONY : talker
+turtle_talker: CMakeFiles/turtle_talker.dir/rule
+.PHONY : turtle_talker
 
 # clean rule for target.
-CMakeFiles/talker.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/clean
-.PHONY : CMakeFiles/talker.dir/clean
+CMakeFiles/turtle_talker.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/clean
+.PHONY : CMakeFiles/turtle_talker.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/listener.dir
+# Target rules for target CMakeFiles/turtle_listener.dir
 
 # All Build rule for target.
-CMakeFiles/listener.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles --progress-num=1,2 "Built target listener"
-.PHONY : CMakeFiles/listener.dir/all
+CMakeFiles/turtle_listener.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_listener.dir/build.make CMakeFiles/turtle_listener.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_listener.dir/build.make CMakeFiles/turtle_listener.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles --progress-num=3,4 "Built target turtle_listener"
+.PHONY : CMakeFiles/turtle_listener.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/listener.dir/rule: cmake_check_build_system
+CMakeFiles/turtle_listener.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/listener.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/turtle_listener.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/listener.dir/rule
+.PHONY : CMakeFiles/turtle_listener.dir/rule
 
 # Convenience name for target.
-listener: CMakeFiles/listener.dir/rule
-.PHONY : listener
+turtle_listener: CMakeFiles/turtle_listener.dir/rule
+.PHONY : turtle_listener
 
 # clean rule for target.
-CMakeFiles/listener.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/clean
-.PHONY : CMakeFiles/listener.dir/clean
+CMakeFiles/turtle_listener.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_listener.dir/build.make CMakeFiles/turtle_listener.dir/clean
+.PHONY : CMakeFiles/turtle_listener.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/turtle_cmd_and_pose.dir
+
+# All Build rule for target.
+CMakeFiles/turtle_cmd_and_pose.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles --progress-num=1,2 "Built target turtle_cmd_and_pose"
+.PHONY : CMakeFiles/turtle_cmd_and_pose.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/turtle_cmd_and_pose.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/turtle_cmd_and_pose.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/turtle_cmd_and_pose.dir/rule
+
+# Convenience name for target.
+turtle_cmd_and_pose: CMakeFiles/turtle_cmd_and_pose.dir/rule
+.PHONY : turtle_cmd_and_pose
+
+# clean rule for target.
+CMakeFiles/turtle_cmd_and_pose.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/clean
+.PHONY : CMakeFiles/turtle_cmd_and_pose.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

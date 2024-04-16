@@ -1,0 +1,23 @@
+[0.196s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs -- -j8 -l8
+[0.234s] [  2%] Built target first_package_msgs__cpp
+[0.235s] [ 12%] Built target first_package_msgs__rosidl_generator_c
+[0.244s] [ 12%] Built target ament_cmake_python_copy_first_package_msgs
+[0.260s] [ 23%] Built target first_package_msgs__rosidl_typesupport_cpp
+[0.262s] [ 34%] Built target first_package_msgs__rosidl_typesupport_c
+[0.263s] [ 44%] Built target first_package_msgs__rosidl_typesupport_introspection_c
+[0.263s] [ 55%] Built target first_package_msgs__rosidl_typesupport_fastrtps_cpp
+[0.272s] [ 72%] Built target first_package_msgs__rosidl_typesupport_fastrtps_c
+[0.272s] [ 76%] Built target first_package_msgs__rosidl_typesupport_introspection_cpp
+[0.288s] [ 76%] Built target first_package_msgs
+[0.302s] [ 78%] Built target first_package_msgs__py
+[0.318s] [ 87%] Built target first_package_msgs__rosidl_generator_py
+[0.337s] [ 95%] Built target first_package_msgs__rosidl_typesupport_introspection_c__pyext
+[0.337s] [ 95%] Built target first_package_msgs__rosidl_typesupport_c__pyext
+[0.337s] [100%] Built target first_package_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.509s] running egg_info
+[0.509s] writing first_package_msgs.egg-info/PKG-INFO
+[0.510s] writing dependency_links to first_package_msgs.egg-info/dependency_links.txt
+[0.510s] writing top-level names to first_package_msgs.egg-info/top_level.txt
+[0.514s] reading manifest file 'first_package_msgs.egg-info/SOURCES.txt'
+[0.515s] writing manifest file 'first_package_msgs.egg-info/SOURCES.txt'
+[0.550s] [100%] Built target ament_cmake_python_build_first_package_msgs_egg

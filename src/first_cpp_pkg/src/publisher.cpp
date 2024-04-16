@@ -20,8 +20,8 @@ private:
     {
         auto message = geometry_msgs::msg::Twist();
         message.linear.x = 2.0;
-        message.angular.z = 0.5;
-        RCLCPP_INFO(this->get_logger(), "Publishing twist message");
+        message.angular.z = 2.0;
+        // RCLCPP_INFO(this->get_logger(), "Publishing twist message");
         publisher_->publish(message);
     }
 
