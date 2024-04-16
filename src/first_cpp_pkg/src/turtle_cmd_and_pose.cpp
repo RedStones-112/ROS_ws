@@ -40,8 +40,8 @@ private:
     void callback_cmd(const geometry_msgs::msg::Twist & msg) 
     {
         // RCLCPP_INFO(this->get_logger(), "test_msg %f ", msg.angular.x);
-        message->cmd_vel_angular = msg.angular.x;
-        message->cmd_vel_linear = msg.linear.z;
+        message->cmd_vel_angular = msg.linear.x;
+        message->cmd_vel_linear = msg.angular.z;
     }
 
     void timer_callback(){
