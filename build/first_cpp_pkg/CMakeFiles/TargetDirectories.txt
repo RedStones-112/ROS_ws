@@ -3,6 +3,7 @@
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/turtle_talker.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/turtle_listener.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/turtle_cmd_and_pose.dir
+/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/service_server.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/test.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/edit_cache.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/rebuild_cache.dir

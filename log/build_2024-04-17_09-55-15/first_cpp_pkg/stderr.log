@@ -1,0 +1,15 @@
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:[m[K In constructor ‘[01m[KMultiSpawning::MultiSpawning()[m[K’:
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:17:54:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Kauto MultiSpawning::Service_callback(std::shared_ptr<first_package_msgs::srv::MultiSpawn_Request_<std::allocator<void> > >, std::shared_ptr<first_package_msgs::srv::MultiSpawn_Response_<std::allocator<void> > >)[m[K’ before deduction of ‘[01m[Kauto[m[K’
+   17 |             "multi_spawn", std::bind(&MultiSpawning::[01;31m[KService_callback[m[K, this, _1, _2));
+      |                                                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:[m[K In member function ‘[01m[Kfloat MultiSpawning::calc_position(int, float)[m[K’:
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:24:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktheta[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   24 |         float [01;35m[Ktheta[m[K = 2 * 3.14 / num;
+      |               [01;35m[K^~~~~[m[K
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:[m[K In member function ‘[01m[Kauto MultiSpawning::Service_callback(std::shared_ptr<first_package_msgs::srv::MultiSpawn_Request_<std::allocator<void> > >, std::shared_ptr<first_package_msgs::srv::MultiSpawn_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:28:95:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kreq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   28 |     auto Service_callback([01;35m[Kconst std::shared_ptr<first_package_msgs::srv::MultiSpawn::Request> req[m[K,
+      |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/service_server.dir/build.make:76: CMakeFiles/service_server.dir/src/service_server.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/service_server.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

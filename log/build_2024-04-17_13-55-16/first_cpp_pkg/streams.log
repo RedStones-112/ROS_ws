@@ -1,0 +1,13 @@
+[0.008s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg': CMAKE_PREFIX_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs:/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg:/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble LD_LIBRARY_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64/ /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg -- -j8 -l8
+[0.055s] [ 25%] Built target turtle_listener
+[0.056s] [ 50%] Built target turtle_cmd_and_pose
+[0.056s] [ 62%] [32mBuilding CXX object CMakeFiles/service_server.dir/src/service_server.cpp.o[0m
+[0.056s] [ 87%] Built target turtle_talker
+[0.144s] [01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kwindow.hpp: No such file or directory
+[0.144s]     5 | #include [01;31m[K<window.hpp>[m[K
+[0.144s]       |          [01;31m[K^~~~~~~~~~~~[m[K
+[0.144s] compilation terminated.
+[0.153s] gmake[2]: *** [CMakeFiles/service_server.dir/build.make:76: CMakeFiles/service_server.dir/src/service_server.cpp.o] Error 1
+[0.154s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/service_server.dir/all] Error 2
+[0.154s] gmake: *** [Makefile:146: all] Error 2
+[0.155s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs:/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg:/home/rds/Desktop/git_ws/ROS_ws/install/first_package_cpp:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials:/home/rds/Desktop/git_ws/ROS_ws/install/first_package:/opt/ros/humble LD_LIBRARY_PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_package_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-11.8/lib64:/usr/local/cuda-11.8/lib64/ /usr/bin/cmake --build /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg -- -j8 -l8

@@ -1,0 +1,24 @@
+[0.909s] Invoking command in '/home/rds/Desktop/git_ws/ROS_ws/src/opencv_tutorials': PYTHONPATH=/home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/prefix_override:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tutorials build --build-base /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build install --record /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/install.log --single-version-externally-managed install_data
+[1.122s] running egg_info
+[1.123s] writing ../../build/opencv_tutorials/opencv_tutorials.egg-info/PKG-INFO
+[1.123s] writing dependency_links to ../../build/opencv_tutorials/opencv_tutorials.egg-info/dependency_links.txt
+[1.123s] writing entry points to ../../build/opencv_tutorials/opencv_tutorials.egg-info/entry_points.txt
+[1.123s] writing requirements to ../../build/opencv_tutorials/opencv_tutorials.egg-info/requires.txt
+[1.123s] writing top-level names to ../../build/opencv_tutorials/opencv_tutorials.egg-info/top_level.txt
+[1.126s] reading manifest file '../../build/opencv_tutorials/opencv_tutorials.egg-info/SOURCES.txt'
+[1.126s] writing manifest file '../../build/opencv_tutorials/opencv_tutorials.egg-info/SOURCES.txt'
+[1.127s] running build
+[1.127s] running build_py
+[1.127s] running install
+[1.127s] running install_lib
+[1.128s] running install_data
+[1.128s] running install_egg_info
+[1.130s] removing '/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials-0.0.0-py3.10.egg-info' (and everything under it)
+[1.130s] Copying ../../build/opencv_tutorials/opencv_tutorials.egg-info to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages/opencv_tutorials-0.0.0-py3.10.egg-info
+[1.131s] running install_scripts
+[1.147s] Installing pub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[1.148s] Installing pub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[1.148s] Installing sub_comp_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[1.148s] Installing sub_image script to /home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/opencv_tutorials
+[1.148s] writing list of installed files to '/home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/install.log'
+[1.170s] Invoked command in '/home/rds/Desktop/git_ws/ROS_ws/src/opencv_tutorials' returned '0': PYTHONPATH=/home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/prefix_override:/home/rds/Desktop/git_ws/ROS_ws/install/opencv_tutorials/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tutorials build --build-base /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/build install --record /home/rds/Desktop/git_ws/ROS_ws/build/opencv_tutorials/install.log --single-version-externally-managed install_data

@@ -30,6 +30,9 @@ if(BUILD_TESTING)
 
   add_executable(turtle_cmd_and_pose src/turtle_cmd_and_pose.cpp)
   ament_target_dependencies(turtle_cmd_and_pose rclcpp turtlesim first_package_msgs geometry_msgs)
+
+  add_executable(service_server src/service_server.cpp)
+  ament_target_dependencies(service_server rclcpp turtlesim first_package_msgs geometry_msgs)
   
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
@@ -44,5 +47,6 @@ install(TARGETS
   turtle_talker
   turtle_listener
   turtle_cmd_and_pose
+  service_server
   DESTINATION lib/${PROJECT_NAME})
 ament_package()

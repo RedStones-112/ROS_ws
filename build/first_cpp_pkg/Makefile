@@ -236,6 +236,19 @@ turtle_cmd_and_pose/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_cmd_and_pose.dir/build.make CMakeFiles/turtle_cmd_and_pose.dir/build
 .PHONY : turtle_cmd_and_pose/fast
 
+#=============================================================================
+# Target rules for targets named service_server
+
+# Build rule for target.
+service_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 service_server
+.PHONY : service_server
+
+# fast build rule for target.
+service_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/build
+.PHONY : service_server/fast
+
 src/publisher.o: src/publisher.cpp.o
 .PHONY : src/publisher.o
 
@@ -259,6 +272,30 @@ src/publisher.s: src/publisher.cpp.s
 src/publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_talker.dir/build.make CMakeFiles/turtle_talker.dir/src/publisher.cpp.s
 .PHONY : src/publisher.cpp.s
+
+src/service_server.o: src/service_server.cpp.o
+.PHONY : src/service_server.o
+
+# target to build an object file
+src/service_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/src/service_server.cpp.o
+.PHONY : src/service_server.cpp.o
+
+src/service_server.i: src/service_server.cpp.i
+.PHONY : src/service_server.i
+
+# target to preprocess a source file
+src/service_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/src/service_server.cpp.i
+.PHONY : src/service_server.cpp.i
+
+src/service_server.s: src/service_server.cpp.s
+.PHONY : src/service_server.s
+
+# target to generate assembly for a file
+src/service_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/src/service_server.cpp.s
+.PHONY : src/service_server.cpp.s
 
 src/subscriber.o: src/subscriber.cpp.o
 .PHONY : src/subscriber.o
@@ -323,12 +360,16 @@ help:
 	@echo "... test"
 	@echo "... first_cpp_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... service_server"
 	@echo "... turtle_cmd_and_pose"
 	@echo "... turtle_listener"
 	@echo "... turtle_talker"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"
+	@echo "... src/service_server.o"
+	@echo "... src/service_server.i"
+	@echo "... src/service_server.s"
 	@echo "... src/subscriber.o"
 	@echo "... src/subscriber.i"
 	@echo "... src/subscriber.s"
