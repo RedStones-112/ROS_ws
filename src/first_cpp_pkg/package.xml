@@ -19,6 +19,11 @@
   <depend>std_msgs</depend>
   <depend>turtlesim</depend>
   <depend>first_package_msgs</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>rclcpp_action</depend>
+  <depend>rclcpp_components</depend>
+  
+  
   
 
 

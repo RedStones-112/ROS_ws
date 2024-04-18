@@ -1,1 +1,1 @@
-rclcpp;geometry_msgs;std_msgs;turtlesim;first_package_msgs;ament_lint_auto;ament_lint_common
+rclcpp;geometry_msgs;std_msgs;turtlesim;first_package_msgs;rcl_interfaces;rclcpp_action;rclcpp_components;ament_lint_auto;ament_lint_common

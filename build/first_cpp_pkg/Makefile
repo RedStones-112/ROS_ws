@@ -249,6 +249,130 @@ service_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/build
 .PHONY : service_server/fast
 
+#=============================================================================
+# Target rules for targets named dist_action_server
+
+# Build rule for target.
+dist_action_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dist_action_server
+.PHONY : dist_action_server
+
+# fast build rule for target.
+dist_action_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dist_action_server.dir/build.make CMakeFiles/dist_action_server.dir/build
+.PHONY : dist_action_server/fast
+
+#=============================================================================
+# Target rules for targets named multi_thread
+
+# Build rule for target.
+multi_thread: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 multi_thread
+.PHONY : multi_thread
+
+# fast build rule for target.
+multi_thread/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/build
+.PHONY : multi_thread/fast
+
+#=============================================================================
+# Target rules for targets named sub_image
+
+# Build rule for target.
+sub_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sub_image
+.PHONY : sub_image
+
+# fast build rule for target.
+sub_image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_image.dir/build.make CMakeFiles/sub_image.dir/build
+.PHONY : sub_image/fast
+
+#=============================================================================
+# Target rules for targets named pub_image
+
+# Build rule for target.
+pub_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_image
+.PHONY : pub_image
+
+# fast build rule for target.
+pub_image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_image.dir/build.make CMakeFiles/pub_image.dir/build
+.PHONY : pub_image/fast
+
+src/dist_action_server.o: src/dist_action_server.cpp.o
+.PHONY : src/dist_action_server.o
+
+# target to build an object file
+src/dist_action_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dist_action_server.dir/build.make CMakeFiles/dist_action_server.dir/src/dist_action_server.cpp.o
+.PHONY : src/dist_action_server.cpp.o
+
+src/dist_action_server.i: src/dist_action_server.cpp.i
+.PHONY : src/dist_action_server.i
+
+# target to preprocess a source file
+src/dist_action_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dist_action_server.dir/build.make CMakeFiles/dist_action_server.dir/src/dist_action_server.cpp.i
+.PHONY : src/dist_action_server.cpp.i
+
+src/dist_action_server.s: src/dist_action_server.cpp.s
+.PHONY : src/dist_action_server.s
+
+# target to generate assembly for a file
+src/dist_action_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dist_action_server.dir/build.make CMakeFiles/dist_action_server.dir/src/dist_action_server.cpp.s
+.PHONY : src/dist_action_server.cpp.s
+
+src/multi_thread.o: src/multi_thread.cpp.o
+.PHONY : src/multi_thread.o
+
+# target to build an object file
+src/multi_thread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/src/multi_thread.cpp.o
+.PHONY : src/multi_thread.cpp.o
+
+src/multi_thread.i: src/multi_thread.cpp.i
+.PHONY : src/multi_thread.i
+
+# target to preprocess a source file
+src/multi_thread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/src/multi_thread.cpp.i
+.PHONY : src/multi_thread.cpp.i
+
+src/multi_thread.s: src/multi_thread.cpp.s
+.PHONY : src/multi_thread.s
+
+# target to generate assembly for a file
+src/multi_thread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/src/multi_thread.cpp.s
+.PHONY : src/multi_thread.cpp.s
+
+src/pub_image.o: src/pub_image.cpp.o
+.PHONY : src/pub_image.o
+
+# target to build an object file
+src/pub_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_image.dir/build.make CMakeFiles/pub_image.dir/src/pub_image.cpp.o
+.PHONY : src/pub_image.cpp.o
+
+src/pub_image.i: src/pub_image.cpp.i
+.PHONY : src/pub_image.i
+
+# target to preprocess a source file
+src/pub_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_image.dir/build.make CMakeFiles/pub_image.dir/src/pub_image.cpp.i
+.PHONY : src/pub_image.cpp.i
+
+src/pub_image.s: src/pub_image.cpp.s
+.PHONY : src/pub_image.s
+
+# target to generate assembly for a file
+src/pub_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_image.dir/build.make CMakeFiles/pub_image.dir/src/pub_image.cpp.s
+.PHONY : src/pub_image.cpp.s
+
 src/publisher.o: src/publisher.cpp.o
 .PHONY : src/publisher.o
 
@@ -296,6 +420,30 @@ src/service_server.s: src/service_server.cpp.s
 src/service_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/service_server.dir/build.make CMakeFiles/service_server.dir/src/service_server.cpp.s
 .PHONY : src/service_server.cpp.s
+
+src/sub_image.o: src/sub_image.cpp.o
+.PHONY : src/sub_image.o
+
+# target to build an object file
+src/sub_image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_image.dir/build.make CMakeFiles/sub_image.dir/src/sub_image.cpp.o
+.PHONY : src/sub_image.cpp.o
+
+src/sub_image.i: src/sub_image.cpp.i
+.PHONY : src/sub_image.i
+
+# target to preprocess a source file
+src/sub_image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_image.dir/build.make CMakeFiles/sub_image.dir/src/sub_image.cpp.i
+.PHONY : src/sub_image.cpp.i
+
+src/sub_image.s: src/sub_image.cpp.s
+.PHONY : src/sub_image.s
+
+# target to generate assembly for a file
+src/sub_image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_image.dir/build.make CMakeFiles/sub_image.dir/src/sub_image.cpp.s
+.PHONY : src/sub_image.cpp.s
 
 src/subscriber.o: src/subscriber.cpp.o
 .PHONY : src/subscriber.o
@@ -360,16 +508,32 @@ help:
 	@echo "... test"
 	@echo "... first_cpp_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... dist_action_server"
+	@echo "... multi_thread"
+	@echo "... pub_image"
 	@echo "... service_server"
+	@echo "... sub_image"
 	@echo "... turtle_cmd_and_pose"
 	@echo "... turtle_listener"
 	@echo "... turtle_talker"
+	@echo "... src/dist_action_server.o"
+	@echo "... src/dist_action_server.i"
+	@echo "... src/dist_action_server.s"
+	@echo "... src/multi_thread.o"
+	@echo "... src/multi_thread.i"
+	@echo "... src/multi_thread.s"
+	@echo "... src/pub_image.o"
+	@echo "... src/pub_image.i"
+	@echo "... src/pub_image.s"
 	@echo "... src/publisher.o"
 	@echo "... src/publisher.i"
 	@echo "... src/publisher.s"
 	@echo "... src/service_server.o"
 	@echo "... src/service_server.i"
 	@echo "... src/service_server.s"
+	@echo "... src/sub_image.o"
+	@echo "... src/sub_image.i"
+	@echo "... src/sub_image.s"
 	@echo "... src/subscriber.o"
 	@echo "... src/subscriber.i"
 	@echo "... src/subscriber.s"

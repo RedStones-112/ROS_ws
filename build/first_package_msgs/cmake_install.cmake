@@ -364,7 +364,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/action" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs/action/Fibonacci.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs/srv/MultiSpawn.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs/srv/Capture.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs/srv/Recode.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -373,6 +385,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/action" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/src/first_package_msgs/action/DistTurtle.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/action" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/src/first_package_msgs/action/Fibonacci.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -385,6 +401,30 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_cmake/srv/MultiSpawn_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/src/first_package_msgs/srv/Capture.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_cmake/srv/Capture_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_cmake/srv/Capture_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/src/first_package_msgs/srv/Recode.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_cmake/srv/Recode_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_package_msgs/srv" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_cmake/srv/Recode_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

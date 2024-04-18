@@ -5,12 +5,18 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/first_package_msgs/action/__init__.py"
   "../rosidl_generator_py/first_package_msgs/action/_dist_turtle.py"
   "../rosidl_generator_py/first_package_msgs/action/_dist_turtle_s.c"
+  "../rosidl_generator_py/first_package_msgs/action/_fibonacci.py"
+  "../rosidl_generator_py/first_package_msgs/action/_fibonacci_s.c"
   "../rosidl_generator_py/first_package_msgs/msg/__init__.py"
   "../rosidl_generator_py/first_package_msgs/msg/_cmd_and_pose_vel.py"
   "../rosidl_generator_py/first_package_msgs/msg/_cmd_and_pose_vel_s.c"
   "../rosidl_generator_py/first_package_msgs/srv/__init__.py"
+  "../rosidl_generator_py/first_package_msgs/srv/_capture.py"
+  "../rosidl_generator_py/first_package_msgs/srv/_capture_s.c"
   "../rosidl_generator_py/first_package_msgs/srv/_multi_spawn.py"
   "../rosidl_generator_py/first_package_msgs/srv/_multi_spawn_s.c"
+  "../rosidl_generator_py/first_package_msgs/srv/_recode.py"
+  "../rosidl_generator_py/first_package_msgs/srv/_recode_s.c"
   "CMakeFiles/first_package_msgs__py"
 )
 

@@ -12,6 +12,10 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 find_package(first_package_msgs REQUIRED)
+find_package(rcl_interfaces REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)
+
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -33,7 +37,20 @@ if(BUILD_TESTING)
 
   add_executable(service_server src/service_server.cpp)
   ament_target_dependencies(service_server rclcpp turtlesim first_package_msgs geometry_msgs)
-  
+
+  add_executable(dist_action_server src/dist_action_server.cpp)
+  ament_target_dependencies(dist_action_server rclcpp turtlesim first_package_msgs geometry_msgs rcl_interfaces rclcpp_action)
+
+  add_executable(multi_thread src/multi_thread.cpp)
+  ament_target_dependencies(multi_thread rclcpp turtlesim first_package_msgs geometry_msgs rcl_interfaces rclcpp_action)
+
+  add_executable(sub_image src/sub_image.cpp)
+  ament_target_dependencies(sub_image rclcpp turtlesim first_package_msgs geometry_msgs rcl_interfaces rclcpp_action)
+
+  add_executable(pub_image src/pub_image.cpp)
+  ament_target_dependencies(pub_image rclcpp turtlesim first_package_msgs geometry_msgs rcl_interfaces rclcpp_action)
+
+ 
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
@@ -48,5 +65,9 @@ install(TARGETS
   turtle_listener
   turtle_cmd_and_pose
   service_server
+  dist_action_server
+  multi_thread
+  sub_image
+  pub_image
   DESTINATION lib/${PROJECT_NAME})
 ament_package()

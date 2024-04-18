@@ -130,6 +130,8 @@
     "typeindex": "cpp",
     "typeinfo": "cpp",
     "variant": "cpp",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "first_cpp_pkg": "cpp",
+    "*.action": "cpp"
   }
 }
