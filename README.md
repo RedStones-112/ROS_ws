@@ -2,11 +2,11 @@
   ## 사용법
 -     ros2 launch camera_app_pkg camera_app.launch.py로 노드들 활성화
 # Node
-      ## pub_image
+  ## pub_image
         해당 노드는 웹캠에서 이미지를 가져와 /web_cam 이란 이름의, Image라는 메세지형태의 topic을 보내주는 역할을 합니다.
-      ## canny_pub
+  ## canny_pub
         해당 노드는 /web_cam의 데이터를 받아 canny_edge필터를 씌워 /edge라는 이름의, Image라는 메세지형태의 topic을 보내주는 역할을 합니다.
-      ## camera_app_node
+  ## camera_app_node
         해당 노드는 /web_cam. /edge의 데이터를 받아오며 Capture, Recode라는 서비스를 가지고 있습니다.
         파라미터인 msg_type의 값에따라 캡처하고 녹화하는 이미지데이터를 선택합니다.
         이때 저장되는 경로는 path를 따릅니다.
