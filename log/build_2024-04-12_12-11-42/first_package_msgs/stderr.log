@@ -1,8 +1,0 @@
-[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:213 (add_custom_target):
-  The target name "," is reserved or not valid for certain CMake features,
-  such as generator expressions, and may result in undefined behavior.
-Call Stack (most recent call first):
-  CMakeLists.txt:16 (rosidl_generate_interfaces)
-
-[0m
-gmake: *** [Makefile:226: cmake_check_build_system] Error 1

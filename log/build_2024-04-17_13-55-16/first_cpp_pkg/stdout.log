@@ -1,4 +1,0 @@
-[ 25%] Built target turtle_listener
-[ 50%] Built target turtle_cmd_and_pose
-[ 62%] [32mBuilding CXX object CMakeFiles/service_server.dir/src/service_server.cpp.o[0m
-[ 87%] Built target turtle_talker

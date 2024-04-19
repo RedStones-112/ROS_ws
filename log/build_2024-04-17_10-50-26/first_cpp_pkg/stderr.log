@@ -1,4 +1,0 @@
-[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:[m[K In member function ‘[01m[Kvoid MultiSpawning::Service_callback(std::shared_ptr<first_package_msgs::srv::MultiSpawn_Request_<std::allocator<void> > >, std::shared_ptr<first_package_msgs::srv::MultiSpawn_Response_<std::allocator<void> > >)[m[K’:
-[01m[K/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/src/service_server.cpp:37:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   37 |     [01;35m[Kconst std::shared_ptr<first_package_msgs::srv::MultiSpawn::Response> res[m[K){
-      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
