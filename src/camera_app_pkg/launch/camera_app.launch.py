@@ -30,5 +30,11 @@ def generate_launch_description():
             executable='canny_pub',
             name='canny_pub',
             output='screen'),
+
+        Node(
+            package='camera_app_pkg',
+            executable='pub_image',
+            name='pub_image',
+            output='screen'),
     ]
 )
