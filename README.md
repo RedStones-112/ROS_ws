@@ -1,6 +1,13 @@
 # camera_app_pkg
+  ## Build
+  터미널에서 ROS_WS 폴더까지 이동후 아래 명령어를 통해 build
+  - colcon build
   ## 사용법
--     ros2 launch camera_app_pkg camera_app.launch.py로 노드들 활성화
+-     source /opt/ros/humble/setup.bash
+-     ros2 launch camera_app_pkg camera_app.launch.py
+
+  를 통해 노드들 활성화
+
   ## Node
     ### pub_image
         해당 노드는 웹캠에서 이미지를 가져와 /web_cam 이란 이름의, Image라는 메세지형태의 topic을 보내주는 역할을 합니다.
@@ -11,18 +18,21 @@
         파라미터인 msg_type의 값에따라 캡처하고 녹화하는 이미지데이터를 선택합니다.
         이때 저장되는 경로는 path를 따릅니다.
   ## service
--     ros2 service call /capture first_package_msgs/srv/Capture "{}" : 지정된 경로에 사진 저장
--     ros2 service call /recode first_package_msgs/srv/Recode "{status: True}" : 지정된 경로에 영상 녹화 시작
--     ros2 service call /recode first_package_msgs/srv/Recode "{status: False}" : 지정된 경로에 영상 녹화 종료
+-     ros2 service call /capture first_package_msgs/srv/Capture "{}"
+   : 지정된 경로에 사진 저장
+-     ros2 service call /recode first_package_msgs/srv/Recode "{status: True}"
+   : 지정된 경로에 영상 녹화 시작
+-     ros2 service call /recode first_package_msgs/srv/Recode "{status: False}"
+   : 지정된 경로에 영상 녹화 종료
 
   ## param
--     msg_type
--       받아오는 토픽명 (default : /web_cam)
--         /web_cam : 기본 카메라 토픽
--         /edge : 엣지필터를 씌운 이미지 토픽
-- 
--     path (default : /capture)
--         캡처, 녹화파일을 저장하는 경로값
+      msg_type
+        받아오는 토픽명 (default : /web_cam)
+          /web_cam : 기본 카메라 토픽
+          /edge : 엣지필터를 씌운 이미지 토픽
+  
+      path (default : /capture)
+          캡처, 녹화파일을 저장하는 경로값
 
   ## 필터노드추가
 1. 필터노드를 추가한다면 /web_cam 토픽을 받아서 가공후 publish해주세요
