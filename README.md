@@ -1,7 +1,9 @@
 # camera_app_pkg
   ## Build
   터미널에서 ROS_WS 폴더까지 이동후 아래 명령어를 통해 build
-  - colcon build
+-     colcon build
+-     source ./install/local_setup.bash
+
   ## 사용법
 -     source /opt/ros/humble/setup.bash
 -     ros2 launch camera_app_pkg camera_app.launch.py
@@ -10,13 +12,13 @@
 
   ## Node
     ### pub_image
-        해당 노드는 웹캠에서 이미지를 가져와 /web_cam 이란 이름의, Image라는 메세지형태의 topic을 보내주는 역할을 합니다.
+  해당 노드는 웹캠에서 이미지를 가져와 /web_cam 이란 이름의, Image라는 메세지형태의 topic을 보내주는 역할을 합니다.
     ### canny_pub
-        해당 노드는 /web_cam의 데이터를 받아 canny_edge필터를 씌워 /edge라는 이름의, Image라는 메세지형태의 topic을 보내주는 역할을 합니다.
+  해당 노드는 /web_cam의 데이터를 받아 canny_edge필터를 씌워 /edge라는 이름의, Image라는 메세지형태의 topic을 보내주는 역할을 합니다.
     ### camera_app_node
-        해당 노드는 /web_cam. /edge의 데이터를 받아오며 Capture, Recode라는 서비스를 가지고 있습니다.
-        파라미터인 msg_type의 값에따라 캡처하고 녹화하는 이미지데이터를 선택합니다.
-        이때 저장되는 경로는 path를 따릅니다.
+  해당 노드는 /web_cam. /edge의 데이터를 받아오며 Capture, Recode라는 서비스를 가지고 있습니다.
+  파라미터인 msg_type의 값에따라 캡처하고 녹화하는 이미지데이터를 선택합니다.
+  이때 저장되는 경로는 path를 따릅니다.
   ## service
 -     ros2 service call /capture first_package_msgs/srv/Capture "{}"
    : 지정된 경로에 사진 저장
@@ -25,14 +27,20 @@
 -     ros2 service call /recode first_package_msgs/srv/Recode "{status: False}"
    : 지정된 경로에 영상 녹화 종료
 
-  ## param
-      msg_type
-        받아오는 토픽명 (default : /web_cam)
-          /web_cam : 기본 카메라 토픽
-          /edge : 엣지필터를 씌운 이미지 토픽
+## param
+  msg_type
   
-      path (default : /capture)
-          캡처, 녹화파일을 저장하는 경로값
+    받아오는 토픽명 (default : /web_cam)
+    
+      /web_cam : 기본 카메라 토픽
+    
+      /edge : 엣지필터를 씌운 이미지 토픽
+  
+
+  path (default : ./capture)
+  
+    캡처, 녹화파일을 저장하는 경로값
+    
 
   ## 필터노드추가
 1. 필터노드를 추가한다면 /web_cam 토픽을 받아서 가공후 publish해주세요
@@ -42,6 +50,7 @@
 3. camera_app_pkg/setup.py 파일의 entry_points에 추가할 노드를 추가해주세요
 
 4. camera_app_pkg/camera_app.launch.py 파일에 Node를 추가해 주세요 name은 자유롭게 executable은 앞서 entry_points에 추가한 부분의 앞부분을 작성해주세요
+
 )예시 'canny_pub = camera_app_pkg.canny_pub:main' 라면 canny_pub
 
 5. 만약 노드에 파라미터초기값을 정해주고싶다면 path.yaml에 파라미터 초기값을 넣어주세요 양식은 똑같이 하되 맨 위의 노드명은 launch파일의 name에 작성한 부분을 적어주세요.
