@@ -246,7 +246,7 @@ first_package_msgs__srv__Recode_Response__init(first_package_msgs__srv__Recode_R
     return false;
   }
   // save_path
-  if (!rosidl_runtime_c__String__Sequence__init(&msg->save_path, 0)) {
+  if (!rosidl_runtime_c__String__init(&msg->save_path)) {
     first_package_msgs__srv__Recode_Response__fini(msg);
     return false;
   }
@@ -260,7 +260,7 @@ first_package_msgs__srv__Recode_Response__fini(first_package_msgs__srv__Recode_R
     return;
   }
   // save_path
-  rosidl_runtime_c__String__Sequence__fini(&msg->save_path);
+  rosidl_runtime_c__String__fini(&msg->save_path);
 }
 
 bool
@@ -270,7 +270,7 @@ first_package_msgs__srv__Recode_Response__are_equal(const first_package_msgs__sr
     return false;
   }
   // save_path
-  if (!rosidl_runtime_c__String__Sequence__are_equal(
+  if (!rosidl_runtime_c__String__are_equal(
       &(lhs->save_path), &(rhs->save_path)))
   {
     return false;
@@ -287,7 +287,7 @@ first_package_msgs__srv__Recode_Response__copy(
     return false;
   }
   // save_path
-  if (!rosidl_runtime_c__String__Sequence__copy(
+  if (!rosidl_runtime_c__String__copy(
       &(input->save_path), &(output->save_path)))
   {
     return false;

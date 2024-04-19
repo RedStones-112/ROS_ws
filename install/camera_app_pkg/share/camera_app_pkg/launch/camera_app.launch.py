@@ -10,7 +10,7 @@ def generate_launch_description():
         default=os.path.join(
         get_package_share_directory('camera_app_pkg'),
         'param',
-        'size.yaml')
+        'path.yaml')
         )
     return LaunchDescription(
     [
@@ -29,7 +29,6 @@ def generate_launch_description():
             package='camera_app_pkg',
             executable='canny_pub',
             name='canny_pub',
-            parameters=[param_dir],
             output='screen'),
     ]
 )

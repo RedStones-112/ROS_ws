@@ -111,8 +111,6 @@ PyObject * first_package_msgs__srv__recode__request__convert_to_py(void * raw_ro
 // already included above
 // #include "first_package_msgs/srv/detail/recode__functions.h"
 
-#include "rosidl_runtime_c/primitives_sequence.h"
-#include "rosidl_runtime_c/primitives_sequence_functions.h"
 #include "rosidl_runtime_c/string.h"
 #include "rosidl_runtime_c/string_functions.h"
 
@@ -155,44 +153,14 @@ bool first_package_msgs__srv__recode__response__convert_from_py(PyObject * _pyms
     if (!field) {
       return false;
     }
-    {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'save_path'");
-      if (!seq_field) {
-        Py_DECREF(field);
-        return false;
-      }
-      Py_ssize_t size = PySequence_Size(field);
-      if (-1 == size) {
-        Py_DECREF(seq_field);
-        Py_DECREF(field);
-        return false;
-      }
-      if (!rosidl_runtime_c__String__Sequence__init(&(ros_message->save_path), size)) {
-        PyErr_SetString(PyExc_RuntimeError, "unable to create String__Sequence ros_message");
-        Py_DECREF(seq_field);
-        Py_DECREF(field);
-        return false;
-      }
-      rosidl_runtime_c__String * dest = ros_message->save_path.data;
-      for (Py_ssize_t i = 0; i < size; ++i) {
-        PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
-        if (!item) {
-          Py_DECREF(seq_field);
-          Py_DECREF(field);
-          return false;
-        }
-        assert(PyUnicode_Check(item));
-        PyObject * encoded_item = PyUnicode_AsUTF8String(item);
-        if (!encoded_item) {
-          Py_DECREF(seq_field);
-          Py_DECREF(field);
-          return false;
-        }
-        rosidl_runtime_c__String__assign(&dest[i], PyBytes_AS_STRING(encoded_item));
-        Py_DECREF(encoded_item);
-      }
-      Py_DECREF(seq_field);
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
     }
+    rosidl_runtime_c__String__assign(&ros_message->save_path, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
 
@@ -219,22 +187,13 @@ PyObject * first_package_msgs__srv__recode__response__convert_to_py(void * raw_r
   first_package_msgs__srv__Recode_Response * ros_message = (first_package_msgs__srv__Recode_Response *)raw_ros_message;
   {  // save_path
     PyObject * field = NULL;
-    size_t size = ros_message->save_path.size;
-    rosidl_runtime_c__String * src = ros_message->save_path.data;
-    field = PyList_New(size);
+    field = PyUnicode_DecodeUTF8(
+      ros_message->save_path.data,
+      strlen(ros_message->save_path.data),
+      "replace");
     if (!field) {
       return NULL;
     }
-    for (size_t i = 0; i < size; ++i) {
-      PyObject * decoded_item = PyUnicode_DecodeUTF8(src[i].data, strlen(src[i].data), "replace");
-      if (!decoded_item) {
-        return NULL;
-      }
-      int rc = PyList_SetItem(field, i, decoded_item);
-      (void)rc;
-      assert(rc == 0);
-    }
-    assert(PySequence_Check(field));
     {
       int rc = PyObject_SetAttrString(_pymessage, "save_path", field);
       Py_DECREF(field);

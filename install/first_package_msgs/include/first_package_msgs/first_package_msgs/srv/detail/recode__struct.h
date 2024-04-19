@@ -43,7 +43,7 @@ typedef struct first_package_msgs__srv__Recode_Request__Sequence
 /// Struct defined in srv/Recode in the package first_package_msgs.
 typedef struct first_package_msgs__srv__Recode_Response
 {
-  rosidl_runtime_c__String__Sequence save_path;
+  rosidl_runtime_c__String save_path;
 } first_package_msgs__srv__Recode_Response;
 
 // Struct for a sequence of first_package_msgs__srv__Recode_Response.

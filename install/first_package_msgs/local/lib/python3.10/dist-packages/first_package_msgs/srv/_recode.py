@@ -182,18 +182,18 @@ class Recode_Response(metaclass=Metaclass_Recode_Response):
     ]
 
     _fields_and_field_types = {
-        'save_path': 'sequence<string>',
+        'save_path': 'string',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.UnboundedString()),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.save_path = kwargs.get('save_path', [])
+        self.save_path = kwargs.get('save_path', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -241,19 +241,9 @@ class Recode_Response(metaclass=Metaclass_Recode_Response):
     @save_path.setter
     def save_path(self, value):
         if __debug__:
-            from collections.abc import Sequence
-            from collections.abc import Set
-            from collections import UserList
-            from collections import UserString
             assert \
-                ((isinstance(value, Sequence) or
-                  isinstance(value, Set) or
-                  isinstance(value, UserList)) and
-                 not isinstance(value, str) and
-                 not isinstance(value, UserString) and
-                 all(isinstance(v, str) for v in value) and
-                 True), \
-                "The 'save_path' field must be a set or sequence and each value of type 'str'"
+                isinstance(value, str), \
+                "The 'save_path' field must be of type 'str'"
         self._save_path = value
 
 

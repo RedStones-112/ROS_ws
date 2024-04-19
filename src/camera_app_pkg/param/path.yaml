@@ -1,0 +1,5 @@
+/camera_app_node:
+  ros__parameters:
+    path: './capture/'
+    msg_type: '/web_cam'
+    use_sim_time: false

@@ -316,8 +316,7 @@ CMakeFiles/first_package_msgs__rosidl_generator_c.dir/rosidl_generator_c/first_p
   /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
   /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
 
 CMakeFiles/first_package_msgs__rosidl_generator_c.dir/rosidl_generator_c/first_package_msgs/srv/detail/multi_spawn__functions.c.o: rosidl_generator_c/first_package_msgs/srv/detail/multi_spawn__functions.c \
   /usr/include/stdc-predef.h \
@@ -450,6 +449,7 @@ CMakeFiles/first_package_msgs__rosidl_generator_c.dir/rosidl_generator_c/first_p
   /usr/include/stdint.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   /usr/include/assert.h \
   /usr/include/string.h \
@@ -471,7 +471,7 @@ CMakeFiles/first_package_msgs__rosidl_generator_c.dir/rosidl_generator_c/first_p
   /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
   /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
   /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
-  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string_functions.h
 
 
 rosidl_generator_c/first_package_msgs/srv/detail/recode__struct.h:

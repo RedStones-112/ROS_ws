@@ -1,3 +1,3 @@
 
-string[] save_path
+string save_path
 

@@ -123,78 +123,23 @@ void first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_
   first_package_msgs__srv__Recode_Response__fini(message_memory);
 }
 
-size_t first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__size_function__Recode_Response__save_path(
-  const void * untyped_member)
-{
-  const rosidl_runtime_c__String__Sequence * member =
-    (const rosidl_runtime_c__String__Sequence *)(untyped_member);
-  return member->size;
-}
-
-const void * first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__get_const_function__Recode_Response__save_path(
-  const void * untyped_member, size_t index)
-{
-  const rosidl_runtime_c__String__Sequence * member =
-    (const rosidl_runtime_c__String__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void * first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__get_function__Recode_Response__save_path(
-  void * untyped_member, size_t index)
-{
-  rosidl_runtime_c__String__Sequence * member =
-    (rosidl_runtime_c__String__Sequence *)(untyped_member);
-  return &member->data[index];
-}
-
-void first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__fetch_function__Recode_Response__save_path(
-  const void * untyped_member, size_t index, void * untyped_value)
-{
-  const rosidl_runtime_c__String * item =
-    ((const rosidl_runtime_c__String *)
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__get_const_function__Recode_Response__save_path(untyped_member, index));
-  rosidl_runtime_c__String * value =
-    (rosidl_runtime_c__String *)(untyped_value);
-  *value = *item;
-}
-
-void first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__assign_function__Recode_Response__save_path(
-  void * untyped_member, size_t index, const void * untyped_value)
-{
-  rosidl_runtime_c__String * item =
-    ((rosidl_runtime_c__String *)
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__get_function__Recode_Response__save_path(untyped_member, index));
-  const rosidl_runtime_c__String * value =
-    (const rosidl_runtime_c__String *)(untyped_value);
-  *item = *value;
-}
-
-bool first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__resize_function__Recode_Response__save_path(
-  void * untyped_member, size_t size)
-{
-  rosidl_runtime_c__String__Sequence * member =
-    (rosidl_runtime_c__String__Sequence *)(untyped_member);
-  rosidl_runtime_c__String__Sequence__fini(member);
-  return rosidl_runtime_c__String__Sequence__init(member, size);
-}
-
 static rosidl_typesupport_introspection_c__MessageMember first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__Recode_Response_message_member_array[1] = {
   {
     "save_path",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    true,  // is array
+    false,  // is array
     0,  // array size
     false,  // is upper bound
     offsetof(first_package_msgs__srv__Recode_Response, save_path),  // bytes offset in struct
     NULL,  // default value
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__size_function__Recode_Response__save_path,  // size() function pointer
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__get_const_function__Recode_Response__save_path,  // get_const(index) function pointer
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__get_function__Recode_Response__save_path,  // get(index) function pointer
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__fetch_function__Recode_Response__save_path,  // fetch(index, &value) function pointer
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__assign_function__Recode_Response__save_path,  // assign(index, value) function pointer
-    first_package_msgs__srv__Recode_Response__rosidl_typesupport_introspection_c__resize_function__Recode_Response__save_path  // resize(index) function pointer
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
