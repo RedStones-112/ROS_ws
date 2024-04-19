@@ -14,7 +14,7 @@
 -     ros2 service call /capture first_package_msgs/srv/Capture "{}" : 지정된 경로에 사진 저장
 -     ros2 service call /recode first_package_msgs/srv/Recode "{status: True}" : 지정된 경로에 영상 녹화 시작
 -     ros2 service call /recode first_package_msgs/srv/Recode "{status: False}" : 지정된 경로에 영상 녹화 종료
-- 
+
   ## param
 -     msg_type
 -       받아오는 토픽명 (default : /web_cam)
