@@ -1,7 +1,7 @@
 #include <chrono>
 #include <memory>
 #include "rclcpp/rclcpp.hpp"
-#include "first_cpp_pkg/publisher.hpp"
+#include "test/publisher.hpp"
 // #include "first_cpp_pkg/include/first_cpp_pkg/subscriber.hpp"
 
 
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
     // TurtlePublisher pub;
     // TurtlesimSubscriber sub;
-    // rclcpp::executors::MultiThreadedExecutor executor;
+    rclcpp::executors::MultiThreadedExecutor executor;
 
     // executor.add_node(sub);
     // executor.add_node(pub);
