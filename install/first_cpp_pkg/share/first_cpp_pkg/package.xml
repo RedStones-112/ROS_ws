@@ -22,8 +22,9 @@
   <depend>rcl_interfaces</depend>
   <depend>rclcpp_action</depend>
   <depend>rclcpp_components</depend>
-  
-  
+  <depend>camera_app</depend>
+  <depend>Opencv</depend>
+  <depend>cv_bridge</depend>
   
 
 

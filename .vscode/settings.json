@@ -132,6 +132,8 @@
     "variant": "cpp",
     "valarray": "cpp",
     "first_cpp_pkg": "cpp",
-    "*.action": "cpp"
+    "*.action": "cpp",
+    "regex": "cpp",
+    "*.ipp": "cpp"
   }
 }

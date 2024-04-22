@@ -301,6 +301,43 @@ pub_image/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_image.dir/build.make CMakeFiles/pub_image.dir/build
 .PHONY : pub_image/fast
 
+#=============================================================================
+# Target rules for targets named camera_app
+
+# Build rule for target.
+camera_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 camera_app
+.PHONY : camera_app
+
+# fast build rule for target.
+camera_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_app.dir/build.make CMakeFiles/camera_app.dir/build
+.PHONY : camera_app/fast
+
+src/camera_app.o: src/camera_app.cpp.o
+.PHONY : src/camera_app.o
+
+# target to build an object file
+src/camera_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_app.dir/build.make CMakeFiles/camera_app.dir/src/camera_app.cpp.o
+.PHONY : src/camera_app.cpp.o
+
+src/camera_app.i: src/camera_app.cpp.i
+.PHONY : src/camera_app.i
+
+# target to preprocess a source file
+src/camera_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_app.dir/build.make CMakeFiles/camera_app.dir/src/camera_app.cpp.i
+.PHONY : src/camera_app.cpp.i
+
+src/camera_app.s: src/camera_app.cpp.s
+.PHONY : src/camera_app.s
+
+# target to generate assembly for a file
+src/camera_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_app.dir/build.make CMakeFiles/camera_app.dir/src/camera_app.cpp.s
+.PHONY : src/camera_app.cpp.s
+
 src/dist_action_server.o: src/dist_action_server.cpp.o
 .PHONY : src/dist_action_server.o
 
@@ -508,6 +545,7 @@ help:
 	@echo "... test"
 	@echo "... first_cpp_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... camera_app"
 	@echo "... dist_action_server"
 	@echo "... multi_thread"
 	@echo "... pub_image"
@@ -516,6 +554,9 @@ help:
 	@echo "... turtle_cmd_and_pose"
 	@echo "... turtle_listener"
 	@echo "... turtle_talker"
+	@echo "... src/camera_app.o"
+	@echo "... src/camera_app.i"
+	@echo "... src/camera_app.s"
 	@echo "... src/dist_action_server.o"
 	@echo "... src/dist_action_server.i"
 	@echo "... src/dist_action_server.s"

@@ -15,7 +15,9 @@ find_package(first_package_msgs REQUIRED)
 find_package(rcl_interfaces REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(rclcpp_components REQUIRED)
-
+find_package(sensor_msgs REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(cv_bridge REQUIRED)
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -24,8 +26,6 @@ find_package(rclcpp_components REQUIRED)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   
-  
-
   add_executable(turtle_talker src/publisher.cpp)
   ament_target_dependencies(turtle_talker rclcpp geometry_msgs)
 
@@ -45,12 +45,16 @@ if(BUILD_TESTING)
   ament_target_dependencies(multi_thread rclcpp turtlesim first_package_msgs geometry_msgs rcl_interfaces rclcpp_action)
 
   add_executable(sub_image src/sub_image.cpp)
-  ament_target_dependencies(sub_image rclcpp turtlesim first_package_msgs geometry_msgs rcl_interfaces rclcpp_action)
+  ament_target_dependencies(sub_image rclcpp turtlesim sensor_msgs rclcpp_action OpenCV cv_bridge)
 
   add_executable(pub_image src/pub_image.cpp)
-  ament_target_dependencies(pub_image rclcpp turtlesim first_package_msgs geometry_msgs rcl_interfaces rclcpp_action)
+  ament_target_dependencies(pub_image rclcpp sensor_msgs OpenCV)
 
- 
+  add_executable(camera_app src/camera_app.cpp)
+  ament_target_dependencies(camera_app rclcpp first_package_msgs sensor_msgs OpenCV cv_bridge)
+
+
+
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
@@ -69,5 +73,6 @@ install(TARGETS
   multi_thread
   sub_image
   pub_image
+  camera_app
   DESTINATION lib/${PROJECT_NAME})
 ament_package()

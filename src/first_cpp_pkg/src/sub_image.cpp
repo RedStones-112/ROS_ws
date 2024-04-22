@@ -1,62 +1,52 @@
 #include <chrono>
 #include <memory>
 #include <vector>
-#include <cmath>
-#include <unistd.h>
+#include <string>
+#include <opencv2/opencv.hpp>
+#include <cv_bridge/cv_bridge.h>
 
 #include "rclcpp/rclcpp.hpp"
-#include "rclcpp_action/rclcpp_action.hpp"
-#include "rcl_interfaces/msg/set_parameters_result.hpp"
 
-// #include "subscriber.cpp"
 
-#include "first_package_msgs/action/dist_turtle.hpp"
-#include "geometry_msgs/msg/twist.hpp"
-#include "turtlesim/srv/spawn.hpp"
-#include "turtlesim/srv/teleport_absolute.hpp"
-
+#include "sensor_msgs/msg/image.hpp"
 
 using std::placeholders::_1;
 using std::placeholders::_2;
-namespace DistTurtleServer_namespace
-{
-class DistTurtleServer : public rclcpp::Node
+
+
+class ImageSubscriber : public rclcpp::Node
 {
 public:
-    DistTurtleServer() : Node("action_server")
+    ImageSubscriber() : Node("camera_app")
     {
-        // server_ = rclcpp_action::create_server<first_package_msgs::action::DistTurtle>(
-        //     this,
-        //     "dist_turtle",
-        //     std::bind(&DistTurtleServer::execute_callback, this, _1));
+        img_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
+            "/webcam", 10, std::bind(&ImageSubscriber::img_callback, this, _1)
+        );
 
-        // this->server_ = rclcpp_action::create_server<first_package_msgs::action::DistTurtle>(
-        //     this,
-        //     "dist_turtle",
-        //     std::bind(&DistTurtleServer::execute_callback, this, std::placeholders::_1)
-// );
-        
-    
-        
 
     }
 private:
-    // rclcpp_action::Server<first_package_msgs::action::DistTurtle>::SharedPtr server_;
-    void execute_callback(const rclcpp_action::ServerGoalHandle<first_package_msgs::action::DistTurtle> goal_handle)
+    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_subscriber_;
+    
+    void img_callback(const sensor_msgs::msg::Image img_msg)
     {
         
-        
+        cv_bridge::CvImagePtr cv_ptr;
+        cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::BGR8);
+
+        cv::imshow("test", cv_ptr->image);
+        cv::waitKey(3);
     }
 
     
     
 
 };
-}
+
 int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<DistTurtleServer_namespace::DistTurtleServer>());
+    rclcpp::spin(std::make_shared<ImageSubscriber>());
     rclcpp::shutdown();
     return 0;
 }

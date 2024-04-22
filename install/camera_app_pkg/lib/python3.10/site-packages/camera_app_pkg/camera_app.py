@@ -27,9 +27,9 @@ class ImageSubscriber(Node) :
         
         self.bridge = CvBridge()
         
-        self.topic_list = ["/web_cam", "/edge"]
-        self.color_topic_list = ["/web_cam"]
-        self.gray_topic_list = ["/edge"]
+        self.topic_list = ["/web_cam", "/edge"] #put in all topics
+        self.color_topic_list = ["/web_cam"] #put in color_image topics
+        self.gray_topic_list = ["/edge"] #put in gray_image topics
 
         self.callback_list = [self.sub_callback, self.edge_callback]
 
@@ -101,6 +101,7 @@ class ImageSubscriber(Node) :
 
             self.check_capture()
             self.check_recode()
+
 
     def edge_callback(self, msg) : 
         if self.msg_type == self.topic_list[1] :
