@@ -885,5 +885,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/multi_thread.dir/DependInfo.cmake"
   "CMakeFiles/sub_image.dir/DependInfo.cmake"
   "CMakeFiles/pub_image.dir/DependInfo.cmake"
+  "CMakeFiles/pub_edge.dir/DependInfo.cmake"
   "CMakeFiles/camera_app.dir/DependInfo.cmake"
   )

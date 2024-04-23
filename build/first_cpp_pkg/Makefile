@@ -302,6 +302,19 @@ pub_image/fast:
 .PHONY : pub_image/fast
 
 #=============================================================================
+# Target rules for targets named pub_edge
+
+# Build rule for target.
+pub_edge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_edge
+.PHONY : pub_edge
+
+# fast build rule for target.
+pub_edge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_edge.dir/build.make CMakeFiles/pub_edge.dir/build
+.PHONY : pub_edge/fast
+
+#=============================================================================
 # Target rules for targets named camera_app
 
 # Build rule for target.
@@ -385,6 +398,30 @@ src/multi_thread.s: src/multi_thread.cpp.s
 src/multi_thread.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/multi_thread.dir/build.make CMakeFiles/multi_thread.dir/src/multi_thread.cpp.s
 .PHONY : src/multi_thread.cpp.s
+
+src/pub_edge.o: src/pub_edge.cpp.o
+.PHONY : src/pub_edge.o
+
+# target to build an object file
+src/pub_edge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_edge.dir/build.make CMakeFiles/pub_edge.dir/src/pub_edge.cpp.o
+.PHONY : src/pub_edge.cpp.o
+
+src/pub_edge.i: src/pub_edge.cpp.i
+.PHONY : src/pub_edge.i
+
+# target to preprocess a source file
+src/pub_edge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_edge.dir/build.make CMakeFiles/pub_edge.dir/src/pub_edge.cpp.i
+.PHONY : src/pub_edge.cpp.i
+
+src/pub_edge.s: src/pub_edge.cpp.s
+.PHONY : src/pub_edge.s
+
+# target to generate assembly for a file
+src/pub_edge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_edge.dir/build.make CMakeFiles/pub_edge.dir/src/pub_edge.cpp.s
+.PHONY : src/pub_edge.cpp.s
 
 src/pub_image.o: src/pub_image.cpp.o
 .PHONY : src/pub_image.o
@@ -548,6 +585,7 @@ help:
 	@echo "... camera_app"
 	@echo "... dist_action_server"
 	@echo "... multi_thread"
+	@echo "... pub_edge"
 	@echo "... pub_image"
 	@echo "... service_server"
 	@echo "... sub_image"
@@ -563,6 +601,9 @@ help:
 	@echo "... src/multi_thread.o"
 	@echo "... src/multi_thread.i"
 	@echo "... src/multi_thread.s"
+	@echo "... src/pub_edge.o"
+	@echo "... src/pub_edge.i"
+	@echo "... src/pub_edge.s"
 	@echo "... src/pub_image.o"
 	@echo "... src/pub_image.i"
 	@echo "... src/pub_image.s"

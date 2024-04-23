@@ -134,6 +134,7 @@
     "first_cpp_pkg": "cpp",
     "*.action": "cpp",
     "regex": "cpp",
-    "*.ipp": "cpp"
+    "*.ipp": "cpp",
+    "any": "cpp"
   }
 }

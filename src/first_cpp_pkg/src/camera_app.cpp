@@ -25,6 +25,9 @@ public:
         img_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
             "/webcam", 10, std::bind(&CameraApp::img_callback, this, _1));
 
+        edge_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
+            "/edge", 10, std::bind(&CameraApp::edge_callback, this, _1));
+
         cap_server_ = this->create_service<first_package_msgs::srv::Capture>(
             "capture", 
             std::bind(&CameraApp::cap_callback, this, _1, _2));
@@ -32,36 +35,35 @@ public:
         rec_server_ = this->create_service<first_package_msgs::srv::Recode>(
             "recode", 
             std::bind(&CameraApp::rec_callback, this, _1, _2));
+
+
+
         recode_status = false;
         path = "./capture/";
         file_name_video = "video.avi";
         file_name_capture = "capture.jpg";
         old_recode_status = false;
         fourcc = cv::VideoWriter::fourcc('X', 'V', 'I', 'D');
-
+        output_topic_name = "/webcam";
     }
 private:
-    bool recode_status;
+    bool recode_status; // 상태기반 컨트롤 변수
     bool old_recode_status;
-    std::string path;
-    std::string file_name_capture;
+
+    std::string path; // param 1
+    std::string file_name_capture; // cv 변수들
     std::string file_name_video;
     cv::VideoWriter outputVideo;
     int fourcc;
+
+    std::string output_topic_name; // param 2
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_subscriber_;
+    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr edge_subscriber_;
     rclcpp::Service<first_package_msgs::srv::Capture>::SharedPtr cap_server_;
     rclcpp::Service<first_package_msgs::srv::Recode>::SharedPtr rec_server_;
     
     cv_bridge::CvImagePtr cv_ptr;
-    void img_callback(const sensor_msgs::msg::Image img_msg)
-    {
-        
-        
-        cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::BGR8);
-
-        cv::imshow("test", cv_ptr->image);
-        cv::waitKey(3);
-
+    void check_recode(){
         if (recode_status && !old_recode_status){
             outputVideo.open(path + file_name_video, fourcc, 50, cv::Size(cv_ptr->image.cols, cv_ptr->image.rows), true);
 
@@ -72,17 +74,45 @@ private:
         if (!recode_status && old_recode_status){
             outputVideo.release();
         }
-        
-
         old_recode_status = recode_status;
+    }
+
+
+    void img_callback(const sensor_msgs::msg::Image img_msg)
+    {
+        if (output_topic_name == "/webcam"){
+            cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::BGR8);
+
+            cv::imshow("original", cv_ptr->image);
+            cv::waitKey(3);
+
+            check_recode();
+        }
+        
+    }
+
+    void edge_callback(const sensor_msgs::msg::Image img_msg) {
+        if (output_topic_name == "/edge"){
+            cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::MONO8);
+
+            cv::imshow("edge", cv_ptr->image);
+            cv::waitKey(3);
+
+            check_recode();
+        }
+    }
+
+    void parameter_callback() {
+        path;
+        output_topic_name;
     }
 
     first_package_msgs::srv::Capture::Response cap_callback(
         std::shared_ptr<first_package_msgs::srv::Capture::Request> req, 
         std::shared_ptr<first_package_msgs::srv::Capture::Response> res) {
-            
             cv::imwrite(path + file_name_capture, cv_ptr->image);
             RCLCPP_INFO(this->get_logger(), "capture!");
+
             res->save_path = path + file_name_capture;
             return *res;
     }

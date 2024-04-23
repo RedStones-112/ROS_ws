@@ -50,6 +50,9 @@ if(BUILD_TESTING)
   add_executable(pub_image src/pub_image.cpp)
   ament_target_dependencies(pub_image rclcpp sensor_msgs OpenCV)
 
+  add_executable(pub_edge src/pub_edge.cpp)
+  ament_target_dependencies(pub_edge rclcpp turtlesim sensor_msgs rclcpp_action OpenCV cv_bridge)
+
   add_executable(camera_app src/camera_app.cpp)
   ament_target_dependencies(camera_app rclcpp first_package_msgs sensor_msgs OpenCV cv_bridge)
 
@@ -73,6 +76,7 @@ install(TARGETS
   multi_thread
   sub_image
   pub_image
+  pub_edge
   camera_app
   DESTINATION lib/${PROJECT_NAME})
 ament_package()
