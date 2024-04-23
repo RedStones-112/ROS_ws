@@ -34,6 +34,8 @@ public:
             std::bind(&CameraApp::rec_callback, this, _1, _2));
         recode_status = false;
         path = "./capture/";
+        file_name_video = "video.avi";
+        file_name_capture = "capture.jpg";
         old_recode_status = false;
         fourcc = cv::VideoWriter::fourcc('X', 'V', 'I', 'D');
 
@@ -42,6 +44,8 @@ private:
     bool recode_status;
     bool old_recode_status;
     std::string path;
+    std::string file_name_capture;
+    std::string file_name_video;
     cv::VideoWriter outputVideo;
     int fourcc;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_subscriber_;
@@ -52,14 +56,14 @@ private:
     void img_callback(const sensor_msgs::msg::Image img_msg)
     {
         
-        cv_bridge::CvImagePtr cv_ptr;
+        
         cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::BGR8);
 
         cv::imshow("test", cv_ptr->image);
         cv::waitKey(3);
 
         if (recode_status && !old_recode_status){
-            outputVideo.open("video.avi", fourcc, 50, cv::Size(cv_ptr->image.cols, cv_ptr->image.rows), true);
+            outputVideo.open(path + file_name_video, fourcc, 50, cv::Size(cv_ptr->image.cols, cv_ptr->image.rows), true);
 
         }
         else if (recode_status){
@@ -77,9 +81,9 @@ private:
         std::shared_ptr<first_package_msgs::srv::Capture::Request> req, 
         std::shared_ptr<first_package_msgs::srv::Capture::Response> res) {
             
-            cv::imwrite("capture.jpg", cv_ptr->image);
+            cv::imwrite(path + file_name_capture, cv_ptr->image);
             RCLCPP_INFO(this->get_logger(), "capture!");
-            res->save_path = "capture.jpg";
+            res->save_path = path + file_name_capture;
             return *res;
     }
 
@@ -89,7 +93,7 @@ private:
             recode_status = req->status;
 
             if (!req->status){
-                res->save_path = path;
+                res->save_path = path + file_name_video;
             }
             
             return *res;
