@@ -22,6 +22,21 @@ class CameraApp : public rclcpp::Node
 public:
     CameraApp() : Node("camera_app")
     {
+
+        this->declare_parameter("path", "./capture/");
+        this->declare_parameter("topic_name", "/webcam");
+        
+
+        recode_status = false;
+        path = this->get_parameter("path").as_string();
+        output_topic_name = this->get_parameter("topic_name").as_string();
+        file_name_video = "video.avi";
+        file_name_capture = "capture.jpg";
+        old_recode_status = false;
+        fourcc = cv::VideoWriter::fourcc('X', 'V', 'I', 'D');
+
+
+
         img_subscriber_ = this->create_subscription<sensor_msgs::msg::Image>(
             "/webcam", 10, std::bind(&CameraApp::img_callback, this, _1));
 
@@ -37,14 +52,10 @@ public:
             std::bind(&CameraApp::rec_callback, this, _1, _2));
 
 
-
-        recode_status = false;
-        path = "./capture/";
-        file_name_video = "video.avi";
-        file_name_capture = "capture.jpg";
-        old_recode_status = false;
-        fourcc = cv::VideoWriter::fourcc('X', 'V', 'I', 'D');
-        output_topic_name = "/webcam";
+        param_handle_ = this->add_on_set_parameters_callback(
+            std::bind(&CameraApp::parameter_callback, this, _1));
+        // parameter_subscriber_ = this->add_on_set_parameters_callback(
+        //     "/parameter_events", 10, std::bind(&CameraApp::parameter_callback, this, _1));
     }
 private:
     bool recode_status; // 상태기반 컨트롤 변수
@@ -59,6 +70,9 @@ private:
     std::string output_topic_name; // param 2
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr img_subscriber_;
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr edge_subscriber_;
+    
+    rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_handle_;
+    
     rclcpp::Service<first_package_msgs::srv::Capture>::SharedPtr cap_server_;
     rclcpp::Service<first_package_msgs::srv::Recode>::SharedPtr rec_server_;
     
@@ -83,8 +97,8 @@ private:
         if (output_topic_name == "/webcam"){
             cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::BGR8);
 
-            cv::imshow("original", cv_ptr->image);
-            cv::waitKey(3);
+            // cv::imshow("original", cv_ptr->image);
+            // cv::waitKey(3);
 
             check_recode();
         }
@@ -95,16 +109,45 @@ private:
         if (output_topic_name == "/edge"){
             cv_ptr = cv_bridge::toCvCopy(img_msg, sensor_msgs::image_encodings::MONO8);
 
-            cv::imshow("edge", cv_ptr->image);
-            cv::waitKey(3);
+            // cv::imshow("edge", cv_ptr->image);
+            // cv::waitKey(3);
 
             check_recode();
         }
     }
 
-    void parameter_callback() {
-        path;
+    rcl_interfaces::msg::SetParametersResult parameter_callback(const std::vector<rclcpp::Parameter> &params) {
+        rcl_interfaces::msg::SetParametersResult result;
+        
         output_topic_name;
+        result.successful = true;
+        for (const auto &param : params) 
+        {
+            if (param.get_name() == "path" && param.get_type() == rclcpp::ParameterType::PARAMETER_STRING) 
+            {
+                RCLCPP_INFO(this->get_logger(), "param changed!");
+                path = param.value_to_string();
+            } 
+            
+            else if (param.get_name() == "topic_name" && param.get_type() == rclcpp::ParameterType::PARAMETER_STRING) 
+            {
+                RCLCPP_INFO(this->get_logger(), "param changed!");
+                output_topic_name = param.value_to_string();
+            } 
+    
+            else
+            {
+                
+                result.successful = false;
+                result.reason = "Unsupported parameter";
+            }
+        }
+
+        
+        
+
+        
+        return result;
     }
 
     first_package_msgs::srv::Capture::Response cap_callback(
