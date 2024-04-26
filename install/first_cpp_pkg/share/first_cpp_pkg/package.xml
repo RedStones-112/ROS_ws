@@ -26,6 +26,7 @@
   <depend>Opencv</depend>
   <depend>cv_bridge</depend>
   
+  
 
 
   <export>

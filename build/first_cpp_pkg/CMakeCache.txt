@@ -232,9 +232,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//The directory containing a CMake configuration file for CV_Bridge.
-CV_Bridge_DIR:PATH=CV_Bridge_DIR-NOTFOUND
-
 //Path to a library.
 FastCDR_LIBRARY_DEBUG:FILEPATH=FastCDR_LIBRARY_DEBUG-NOTFOUND
 
@@ -261,9 +258,6 @@ OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
-
-//The directory containing a CMake configuration file for Opencv.
-Opencv_DIR:PATH=Opencv_DIR-NOTFOUND
 
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
@@ -355,9 +349,6 @@ ament_cmake_xmllint_DIR:PATH=/opt/ros/humble/share/ament_cmake_xmllint/cmake
 //Path to a program.
 ament_cppcheck_BIN:FILEPATH=/opt/ros/humble/bin/ament_cppcheck
 
-//Path to a program.
-ament_flake8_BIN:FILEPATH=/opt/ros/humble/bin/ament_flake8
-
 //The directory containing a CMake configuration file for ament_index_cpp.
 ament_index_cpp_DIR:PATH=/opt/ros/humble/share/ament_index_cpp/cmake
 
@@ -369,9 +360,6 @@ ament_lint_cmake_BIN:FILEPATH=/opt/ros/humble/bin/ament_lint_cmake
 
 //The directory containing a CMake configuration file for ament_lint_common.
 ament_lint_common_DIR:PATH=/opt/ros/humble/share/ament_lint_common/cmake
-
-//Path to a program.
-ament_pep257_BIN:FILEPATH=/opt/ros/humble/bin/ament_pep257
 
 //Path to a program.
 ament_uncrustify_BIN:FILEPATH=/opt/ros/humble/bin/ament_uncrustify
@@ -406,9 +394,6 @@ fastrtps_cmake_module_DIR:PATH=/opt/ros/humble/share/fastrtps_cmake_module/cmake
 //Value Computed by CMake
 first_cpp_pkg_BINARY_DIR:STATIC=/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg
 
-//The directory containing a CMake configuration file for first_cpp_pkg.
-first_cpp_pkg_DIR:PATH=/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg/cmake
-
 //Value Computed by CMake
 first_cpp_pkg_IS_TOP_LEVEL:STATIC=ON
 
@@ -432,18 +417,6 @@ libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/c
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
-
-//Path to a library.
-opencv:FILEPATH=opencv-NOTFOUND
-
-//Path to a library.
-opencv-4.7.0:FILEPATH=opencv-4.7.0-NOTFOUND
-
-//The directory containing a CMake configuration file for opencv-4.7.0.
-opencv-4.7.0_DIR:PATH=opencv-4.7.0_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for opencv.
-opencv_DIR:PATH=opencv_DIR-NOTFOUND
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so

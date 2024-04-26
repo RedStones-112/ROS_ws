@@ -13,13 +13,13 @@ class TurtlesimSubscriber : public rclcpp::Node
     : Node("turtle_subscriber")
     {
       subscription_ = this->create_subscription<turtlesim::msg::Pose>(
-      "/turtle1/pose", 10, std::bind(&TurtlesimSubscriber::topic_callback, this, _1));
+      "/turtle1/pose", 10, std::bind(&TurtlesimSubscriber::callback, this, _1));
     }
 
   private:
-    void topic_callback(const turtlesim::msg::Pose & msg) const
+    void callback(const turtlesim::msg::Pose & msg) const
     {
-      RCLCPP_INFO(this->get_logger(), "I heard: '%f' '%f' ", msg.x, msg.y);
+      // RCLCPP_INFO(this->get_logger(), "I heard: '%f' '%f' ", msg.x, msg.y);
     }
     rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_;
 };
