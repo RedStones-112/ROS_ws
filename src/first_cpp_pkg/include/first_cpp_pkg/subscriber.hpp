@@ -16,11 +16,11 @@ class TurtlesimSubscriber : public rclcpp::Node
       "/turtle1/pose", 10, std::bind(&TurtlesimSubscriber::callback, this, _1));
     }
 
-  private:
-    void callback(const turtlesim::msg::Pose & msg) const
+    void callback(const turtlesim::msg::Pose & msg)
     {
-      // RCLCPP_INFO(this->get_logger(), "I heard: '%f' '%f' ", msg.x, msg.y);
+      RCLCPP_INFO(this->get_logger(), "I heard: '%f' '%f' ", msg.x, msg.y);
     }
     rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_;
+  private:
 };
 
