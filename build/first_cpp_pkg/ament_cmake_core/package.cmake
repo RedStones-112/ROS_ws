@@ -5,7 +5,7 @@ set(first_cpp_pkg_BUILD_DEPENDS "rclcpp" "geometry_msgs" "std_msgs" "turtlesim" 
 set(first_cpp_pkg_BUILDTOOL_DEPENDS "ament_cmake")
 set(first_cpp_pkg_BUILD_EXPORT_DEPENDS "rclcpp" "geometry_msgs" "std_msgs" "turtlesim" "first_package_msgs" "rcl_interfaces" "rclcpp_action" "rclcpp_components" "camera_app" "Opencv" "cv_bridge")
 set(first_cpp_pkg_BUILDTOOL_EXPORT_DEPENDS )
-set(first_cpp_pkg_EXEC_DEPENDS "rclcpp" "geometry_msgs" "std_msgs" "turtlesim" "first_package_msgs" "rcl_interfaces" "rclcpp_action" "rclcpp_components" "camera_app" "Opencv" "cv_bridge")
+set(first_cpp_pkg_EXEC_DEPENDS "ros2launch" "rclcpp" "geometry_msgs" "std_msgs" "turtlesim" "first_package_msgs" "rcl_interfaces" "rclcpp_action" "rclcpp_components" "camera_app" "Opencv" "cv_bridge")
 set(first_cpp_pkg_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(first_cpp_pkg_GROUP_DEPENDS )
 set(first_cpp_pkg_MEMBER_OF_GROUPS )

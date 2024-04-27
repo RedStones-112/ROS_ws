@@ -88,4 +88,8 @@ install(TARGETS
   fibonacci_action_server
   camera_app
   DESTINATION lib/${PROJECT_NAME})
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 ament_package()

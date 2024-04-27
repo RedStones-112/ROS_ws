@@ -263,6 +263,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/first_cpp_pkg/" TYPE DIRECTORY FILES "/home/rds/Desktop/git_ws/ROS_ws/src/first_cpp_pkg/launch")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/first_cpp_pkg")
 endif()
 
