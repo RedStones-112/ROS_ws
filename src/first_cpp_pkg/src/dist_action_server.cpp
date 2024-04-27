@@ -141,12 +141,12 @@ private:
         {
             msg.linear.set__x(goal->linear_x);
             msg.angular.set__z(goal->angular_z);
-            total_dist = calc_diff_pose();
+            total_dist += calc_diff_pose();
             
             feedback_msg->set__remained_dist(goal->dist - total_dist);
             goal_handle->publish_feedback(feedback_msg);
             publisher_->publish(msg);
-            
+            RCLCPP_INFO(this->get_logger(), "feedback_published dist : %f", feedback_msg->remained_dist);
             if (feedback_msg->remained_dist < 0.5){
                 break;
             }
@@ -178,11 +178,11 @@ public:
     TurtleSub_Action(std::shared_ptr<DistTurtleServer> server_) : TurtlesimSubscriber(){
         
         ac_server = server_;
-        subscription_ = subscription_ = this->create_subscription<turtlesim::msg::Pose>(
-      "/turtle1/pose", 10, std::bind(&TurtleSub_Action::callback, this, _1));;
+    //     subscription_ = subscription_ = this->create_subscription<turtlesim::msg::Pose>(
+    //   "/turtle1/pose", 10, std::bind(&TurtleSub_Action::callback, this, _1));
     }
 
-    void callback(const turtlesim::msg::Pose & msg)
+    void send_info(const turtlesim::msg::Pose & msg)
     {
         ac_server->current_pose.set__x(msg.x);
         ac_server->current_pose.set__y(msg.y);

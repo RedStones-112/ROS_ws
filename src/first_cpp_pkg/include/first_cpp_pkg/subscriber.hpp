@@ -18,6 +18,10 @@ class TurtlesimSubscriber : public rclcpp::Node
 
     void callback(const turtlesim::msg::Pose & msg)
     {
+      send_info(msg);
+    }
+
+    virtual void send_info(const turtlesim::msg::Pose & msg){
       RCLCPP_INFO(this->get_logger(), "I heard: '%f' '%f' ", msg.x, msg.y);
     }
     rclcpp::Subscription<turtlesim::msg::Pose>::SharedPtr subscription_;
