@@ -17,7 +17,7 @@ public:
     MultiSpawning() : Node("multi_spawn")
     {
         server = this->create_service<first_package_msgs::srv::MultiSpawn>(
-            "multi_spawn", std::bind(&MultiSpawning::Service_callback, this, _1, _2));
+            "multi_spawn", std::bind(&MultiSpawning::service_callback, this, _1, _2));
 
         client_spawn = this->create_client<turtlesim::srv::Spawn>("spawn");
         client_teleport = this->create_client<turtlesim::srv::TeleportAbsolute>("turtle1/teleport_absolute");
@@ -36,7 +36,7 @@ private:
         }
         return result;
     }
-    void Service_callback(const std::shared_ptr<first_package_msgs::srv::MultiSpawn::Request> req,
+    void service_callback(const std::shared_ptr<first_package_msgs::srv::MultiSpawn::Request> req,
     const std::shared_ptr<first_package_msgs::srv::MultiSpawn::Response> res){
         int num = req->num;
         float rad = 3; // 반지름
