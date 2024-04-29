@@ -1,6 +1,0 @@
-/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs:msg/CmdAndPoseVel.idl
-/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs:action/DistTurtle.idl
-/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs:action/Fibonacci.idl
-/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs:srv/MultiSpawn.idl
-/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs:srv/Capture.idl
-/home/rds/Desktop/git_ws/ROS_ws/build/first_package_msgs/rosidl_adapter/first_package_msgs:srv/Recode.idl
