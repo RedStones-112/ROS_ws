@@ -1,4 +1,0 @@
-/camera_app_node:
-  ros__parameters:
-    path: './capture/'
-    use_sim_time: false
