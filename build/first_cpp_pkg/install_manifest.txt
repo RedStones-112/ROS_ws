@@ -7,7 +7,6 @@
 /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/sub_image
 /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/pub_image
 /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/pub_edge
-/home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/fibonacci_action_server
 /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/lib/first_cpp_pkg/camera_app
 /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/first_cpp_pkg//launch/turtlesim_and_teleop.launch.xml
 /home/rds/Desktop/git_ws/ROS_ws/install/first_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/first_cpp_pkg

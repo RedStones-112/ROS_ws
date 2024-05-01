@@ -327,19 +327,6 @@ camera_app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_app.dir/build.make CMakeFiles/camera_app.dir/build
 .PHONY : camera_app/fast
 
-#=============================================================================
-# Target rules for targets named fibonacci_action_server
-
-# Build rule for target.
-fibonacci_action_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fibonacci_action_server
-.PHONY : fibonacci_action_server
-
-# fast build rule for target.
-fibonacci_action_server/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_action_server.dir/build.make CMakeFiles/fibonacci_action_server.dir/build
-.PHONY : fibonacci_action_server/fast
-
 src/camera_app.o: src/camera_app.cpp.o
 .PHONY : src/camera_app.o
 
@@ -387,30 +374,6 @@ src/dist_action_server.s: src/dist_action_server.cpp.s
 src/dist_action_server.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dist_action_server.dir/build.make CMakeFiles/dist_action_server.dir/src/dist_action_server.cpp.s
 .PHONY : src/dist_action_server.cpp.s
-
-src/fibonacci_action_server.o: src/fibonacci_action_server.cpp.o
-.PHONY : src/fibonacci_action_server.o
-
-# target to build an object file
-src/fibonacci_action_server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_action_server.dir/build.make CMakeFiles/fibonacci_action_server.dir/src/fibonacci_action_server.cpp.o
-.PHONY : src/fibonacci_action_server.cpp.o
-
-src/fibonacci_action_server.i: src/fibonacci_action_server.cpp.i
-.PHONY : src/fibonacci_action_server.i
-
-# target to preprocess a source file
-src/fibonacci_action_server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_action_server.dir/build.make CMakeFiles/fibonacci_action_server.dir/src/fibonacci_action_server.cpp.i
-.PHONY : src/fibonacci_action_server.cpp.i
-
-src/fibonacci_action_server.s: src/fibonacci_action_server.cpp.s
-.PHONY : src/fibonacci_action_server.s
-
-# target to generate assembly for a file
-src/fibonacci_action_server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fibonacci_action_server.dir/build.make CMakeFiles/fibonacci_action_server.dir/src/fibonacci_action_server.cpp.s
-.PHONY : src/fibonacci_action_server.cpp.s
 
 src/multi_thread.o: src/multi_thread.cpp.o
 .PHONY : src/multi_thread.o
@@ -621,7 +584,6 @@ help:
 	@echo "... uninstall"
 	@echo "... camera_app"
 	@echo "... dist_action_server"
-	@echo "... fibonacci_action_server"
 	@echo "... multi_thread"
 	@echo "... pub_edge"
 	@echo "... pub_image"
@@ -636,9 +598,6 @@ help:
 	@echo "... src/dist_action_server.o"
 	@echo "... src/dist_action_server.i"
 	@echo "... src/dist_action_server.s"
-	@echo "... src/fibonacci_action_server.o"
-	@echo "... src/fibonacci_action_server.i"
-	@echo "... src/fibonacci_action_server.s"
 	@echo "... src/multi_thread.o"
 	@echo "... src/multi_thread.i"
 	@echo "... src/multi_thread.s"

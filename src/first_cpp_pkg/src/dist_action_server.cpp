@@ -178,8 +178,7 @@ public:
     TurtleSub_Action(std::shared_ptr<DistTurtleServer> server_) : TurtlesimSubscriber(){
         
         ac_server = server_;
-    //     subscription_ = subscription_ = this->create_subscription<turtlesim::msg::Pose>(
-    //   "/turtle1/pose", 10, std::bind(&TurtleSub_Action::callback, this, _1));
+
     }
 
     void send_info(const turtlesim::msg::Pose & msg)

@@ -10,7 +10,6 @@
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/pub_image.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/pub_edge.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/camera_app.dir
-/home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/fibonacci_action_server.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/test.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/edit_cache.dir
 /home/rds/Desktop/git_ws/ROS_ws/build/first_cpp_pkg/CMakeFiles/rebuild_cache.dir

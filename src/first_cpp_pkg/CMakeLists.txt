@@ -62,9 +62,7 @@ if(BUILD_TESTING)
   add_executable(camera_app src/camera_app.cpp)
   ament_target_dependencies(camera_app rclcpp first_package_msgs sensor_msgs OpenCV cv_bridge)
 
-  add_executable(fibonacci_action_server src/fibonacci_action_server.cpp)
-  ament_target_dependencies(fibonacci_action_server rclcpp sensor_msgs rclcpp_action first_package_msgs rclcpp_components)
-
+  
 
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
@@ -85,7 +83,6 @@ install(TARGETS
   sub_image
   pub_image
   pub_edge
-  fibonacci_action_server
   camera_app
   DESTINATION lib/${PROJECT_NAME})
 install(DIRECTORY

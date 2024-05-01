@@ -34,7 +34,6 @@ private:
         message->linear_vel = msg.linear_velocity;
         message->angular_vel = msg.angular_velocity;
         
-        
     }
 
     void callback_cmd(const geometry_msgs::msg::Twist & msg) 
