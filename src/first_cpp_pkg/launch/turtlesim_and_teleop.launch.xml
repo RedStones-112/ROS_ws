@@ -1,3 +1,4 @@
+<?xml version='1.0' ?>
 <launch>
   <node pkg="turtlesim" exec="turtlesim_node"/>
   <node pkg="first_cpp_pkg" exec="dist_action_server" name="dist_action_server"/>

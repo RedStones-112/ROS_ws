@@ -1,6 +1,6 @@
 import rclpy as rp
 from rclpy.node import Node
-
+import os
 import time
 import numpy as np
 from turtlesim.srv import TeleportAbsolute
@@ -9,6 +9,7 @@ from turtlesim.srv import Spawn
 from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
 from first_package_msgs.srv import MultiSpawn
+
 
 
 class MultiSpawning(Node) : 
@@ -31,6 +32,7 @@ class MultiSpawning(Node) :
             self.req_spawn.y = y[n] + self.center_y
             self.req_spawn.theta = theta[n]
             self.spawn.call_async(self.req_spawn)
+            
             time.sleep(0.1)
         res.x = x
         res.y = y
